@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Our Story</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -43,6 +44,241 @@
             background-color: #2C2A83;
             padding: 0;
             height: 100%;
+        }
+
+        .top-bar1 {
+            background-color: #3d4a95;
+            color: white;
+            display: flex;
+            gap: 30px;
+            justify-content: space-between;
+            align-items: center;
+            height: 30px;
+            padding: 10px 70px; 
+        }
+
+        .social-media1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #3d4a95;
+            padding: 10px;
+            height: 20px;
+            position: relative;
+            right: 20px;
+        }
+
+        .social-media1 a {
+            color: white;
+            font-size: 24px;
+            margin: 0 15px;
+        }
+
+        .navbar1 {
+            background-color: #f4f4f4;
+            display: flex;
+            height: 85px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 100px;
+        }
+
+        .logo1 {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo1 img {
+            width: 120px;
+            height: 40px;
+        }
+
+        .nav-links1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links1 a {
+            color: #333;
+            text-decoration: none;
+            margin-right: 4px;
+            padding: 0px 15px;
+            margin-left: 60px;
+            font-weight: bold;
+        }
+
+        .nav-links1 a:last-child {
+            margin-right: 0;
+        }
+
+        .nav-links1 a:hover {
+            color: orange;
+        }
+
+        .mobile-menu-icon1 {
+            display: none;
+            cursor: pointer;
+        }
+
+        .menu-icon1 {
+            font-size: 24px;
+        }
+
+        .contact-info1 {
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info1 span {
+            margin-right: 20px; 
+            display: flex;
+            align-items: center;
+            padding: 0px 30px;
+        }
+
+        .contact-info1 img {
+            height: 20px;
+            width: 20px;
+            margin-right: 5px;
+        }
+
+        @media (max-width: 578px) {
+            .nav-links1 {
+               top: 85px !important;
+            }
+        }
+
+        @media (max-width: 1440px) {
+            .navbar1 {
+                padding: 15px 80px; 
+            }
+
+            .top-bar1 {
+                padding: 10px 50px; 
+            }
+
+            .logo1 img {
+                width: 160px;
+                height: 60px;
+            }
+
+            .nav-links1 a {
+                margin-left: 40px;
+                font-size: 18px; 
+            }
+
+            .contact-info1 span {
+                padding: 0px 20px;
+            }
+        }
+
+        @media (max-width: 1289px) {
+            .nav-links1 a {
+                padding: 10px 0;
+                margin-left: 0px;
+                font-size: 18px;
+                border: 1px solid #ebebeb;
+                width: 100%;
+            }
+
+            .logo1 img {
+                width: 190px;
+                height: 70px;
+                position: relative;
+                bottom: 0px;
+            }
+
+            .top-bar1 {
+                padding: 10px 40px;
+                justify-content: center; 
+            }
+
+            .navbar1 {
+                padding: 15px 50px;
+            }
+
+            .nav-links1 {
+                display: none;
+                flex-direction: column;
+                background-color: #f4f4f4;
+                position: absolute;
+                top: 114px;
+                right: 0;
+                width: 36%;
+                text-align: center;
+                opacity: 0;
+                transition: opacity 0.3s ease, visibility 0.3s ease;
+            } 
+                                                
+            .nav-links1.active {
+                display: flex;
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .mobile-menu-icon1 {
+                display: block;
+            }
+
+            .social-media1 {
+                display: none; 
+            }
+        }
+
+        @media (max-width: 320px) {
+            .nav-links1.active {
+                display: flex;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .logo1 img {
+                width: 129px;
+                height: 44px;
+                position: relative;
+                bottom: 1px;
+                right: 25px;
+            }
+
+            .nav-links1 a {
+                padding: 10px 0;
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 766px) {
+            .nav-links1 {
+                top: 85px !important;
+            }
+            .top-bar1 {
+                display: none;
+            }
+        }
+
+        @media (max-width: 330px) {
+            .navbar1 {
+                padding: 10px;
+            }
+
+            .logo1 img {
+                width: 70px;
+                height: 30px;
+                position: relative;
+                top: 3px;
+                left: 10px;
+            }
+
+            .nav-links1 a {
+                padding: 12px 0;
+                font-size: 16px;
+            }
+
+            .menu-icon1 {
+                font-size: 30px;
+            }
         }
 
         .sidebar button {
@@ -928,7 +1164,6 @@
             margin-bottom: 210px;
         }
 
-
         nav {
             display: flex;
             justify-content: center;
@@ -1203,242 +1438,7 @@
                 font-size: 1em;
             }
         }
-    </style>
-     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-    
-        body {
-            font-family: Arial, sans-serif;
-        }
-    
-        .top-bar {
-            background-color: #3d4a95;
-            color: white;
-            display: flex;
-            gap:30px;
-            justify-content: space-between;
-            align-items: center;
-            height: 30px;
-            padding: 10px 70px; 
-        }
-    
-        .social-media {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #3d4a95;
-            padding: 10px;
-            height: 20px;
-            position: relative;
-            right: 20px;
-        }
-    
-        .social-media a {
-            color: white;
-            font-size: 24px;
-            margin: 0 15px;
-        }
-    
-        .navbar {
-            background-color: #f4f4f4;
-            display: flex;
-            width: 100%;
-            height: 85px;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 100px;
-        }
-    
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-    
-        .logo img {
-            width: 120px;
-            height: 40px;
-        }
-    
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-    
-        .nav-links a {
-            color: #333;
-            text-decoration: none;
-            margin-right: 4px;
-            padding: 0px 15px;
-            margin-left: 60px;
-            font-weight: bold;
-        }
-    
-        .nav-links a:last-child {
-            margin-right: 0;
-        }
-    
-        .nav-links a:hover {
-            color: orange;
-        }
-    
-        .mobile-menu-icon {
-            display: none;
-            cursor: pointer;
-        }
-    
-        .menu-icon {
-            font-size: 24px;
-        }
-    
-        .contact-info {
-            display: flex;
-            align-items: center;
-        }
-    
-        .contact-info span {
-            margin-right: 20px; 
-            display: flex;
-            align-items: center;
-            padding:0px 30px
-        }
-    
-        .contact-info img {
-            height: 20px;
-            width: 20px;
-            margin-right: 5px;
-        }
-    
-    
-        @media (max-width: 578px) {
-            .nav-links {
-               top: 85px !important;
-            }
-        }
-    
-    
-    
-        @media (max-width: 1289px) {
-            .nav-links a {
-        padding: 10px 0;
-        margin-left: 0px;
-        font-size: 18px;
-        border: 1px solid #ebebeb;
-        width: 100%;
-    }
-            .logo img {
-                width: 190px;
-                height: 70px;
-                position: relative;
-                bottom: 0px;
-            }
-    
-            .top-bar {
-                padding: 10px 40px;
-                justify-content: center; 
-            }
-    
-            .navbar {
-                padding: 15px 50px;
-                width: 100%;
-            }
-    
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                background-color: #f4f4f4;
-                position: absolute;
-                top: 114px;
-                right: 0;
-                width: 36%;
-                text-align: center;
-                opacity: 0;
-                transition: opacity 0.3s ease, visibility 0.3s ease;
-    
-            }
-    
-            .nav-links.active {
-                display: flex;
-                opacity: 1;
-                visibility: visible;
-                z-index: 1;
-                overflow: hidden;
-                margin-right: 20px;
-            }
-    
-            .mobile-menu-icon {
-                display: block;
-            }
-    
-            .social-media {
-                display: none; 
-            }
-            
-        }
-    
-        @media (max-width: 320px) {
-            .nav-links.active {
-                display: flex;
-                opacity: 1;
-                visibility: visible;
-                z-index: 1;
-                overflow: hidden;
-                margin-right: 20px;
-            }
-        }
-        @media (max-width: 768px) {
-            .logo img {
-                width: 129px;
-                height: 44px;
-                position: relative;
-                bottom: 1px;
-                right: 25px;
-            }
-    
-            .nav-links a {
-                padding: 10px 0;
-                font-size: 18px;
-            }
-        }
-    
-       
-        @media (max-width: 766px) {
-            .nav-links {
-        top: 85px !important;
-    }
-            .top-bar {
-                display: none;
-            }
-        }
-    
-        @media (max-width: 330px) {
-            .navbar {
-                padding: 10px;
-                width: 100%;
-            }
-    
-            .logo img {
-                width: 70px;
-                height: 30px;
-                position: relative;
-                top: 3px;
-                left: 10px;
-            }
-    
-            .nav-links a {
-                padding: 12px 0;
-                font-size: 16px;
-            }
-    
-            .menu-icon {
-                font-size: 30px;
-            }
-        }
-    
+
         .container-footer{
                 display: flex;
                 flex-wrap: wrap; 
@@ -1774,41 +1774,38 @@
 </head>
 
 <body>
-    <header>
-
-        <div class="top-bar">
-            <div class="contact-info">
-                <span><img src="./image/cll.png" alt="Phone">+919988776655</span>
-                <span><img src="./image/mes.png" alt="Email">@abc.com</span>
-                <span><img src="./image/loc.png" alt="Location">Lorem Ipsum, 223344</span>
-            </div>
-            <div class="social-media">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
+    <!-- Navbar Section -->
+    <div class="top-bar1">
+        <div class="contact-info1">
+            <span><img src="./Images/cll.png" alt="Phone">+919988776655</span>
+            <span><img src="./Images/mes.png" alt="Email">@abc.com</span>
+            <span><img src="./Images/loc.png" alt="Location">Lorem Ipsum, 223344</span>
         </div>
-    
-        <!-- Navbar -->
-        <nav class="navbar">
-            <div class="logo">
-                <img src="./image/logo.png" alt="Logo">
-            </div>
-            <div class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">Company</a>
-                <a href="#">Our Solutions</a>
-                <a href="#">Project</a>
-                <a href="#">Press</a>
-                <a href="#">Contact</a>
-            </div>
-            <div class="mobile-menu-icon">
-                <span class="menu-icon">&#9776;</span>
-            </div>
-        </nav>
-    </header>
+        <div class="social-media1">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+   
+    <div class="navbar1">
+        <div class="logo1">
+            <img src="./Images/logo.png" alt="Logo">
+        </div>
+        <div class="nav-links1">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="mobile-menu-icon1">
+            <span class="menu-icon1">☰</span>
+        </div>
+        
+    </div>
+
     <div class="containeryyy">
         <div class="image-sectionyyy">
             <div class="content-sectionyyy">
@@ -1972,74 +1969,46 @@
         });
 
        // Function for handling sections with class '.contentxxx' and nav links '.nav-linkxxx'
-function showContent(contentId) {
-    // Select all content sections related to '.contentxxx' and their respective nav links
-    const contents = document.querySelectorAll('.contentxxx');
-    const navLinks = document.querySelectorAll('.nav-linkxxx');
+        function showContent(contentId) {
+            const contents = document.querySelectorAll('.contentxxx');
+            const navLinks = document.querySelectorAll('.nav-linkxxx');
 
-    // Hide all '.contentxxx' sections
-    contents.forEach(content => {
-        content.classList.add('hiddenxxx');
-    });
+            contents.forEach(content => {
+                content.classList.add('hiddenxxx');
+            });
 
-    // Show the specific '.contentxxx' section based on the passed ID
-    const targetContent = document.getElementById(contentId);
-    if (targetContent) {
-        targetContent.classList.remove('hiddenxxx');
-    }
+            const targetContent = document.getElementById(contentId);
+            if (targetContent) {
+                targetContent.classList.remove('hiddenxxx');
+            }
 
-    // Remove active class from all '.nav-linkxxx' links
-    navLinks.forEach(link => {
-        link.classList.remove('activexxx');
-    });
+            navLinks.forEach(link => {
+                link.classList.remove('activexxx');
+            });
 
-    // Add active class to the clicked link
-    if (event && event.target) {
-        event.target.classList.add('activexxx');
-    }
-}
+            if (event && event.target) {
+                event.target.classList.add('activexxx');
+            }
+        }
 
+        function showContent1(section) {
+            const sections = document.querySelectorAll('.content-section');
+            const buttons = document.querySelectorAll('.sidebar button');
 
-function showContent1(section) {
-   
-    const sections = document.querySelectorAll('.content-section');
-    const buttons = document.querySelectorAll('.sidebar button');
+            sections.forEach(s => s.classList.add('hidden'));
 
-    
-    sections.forEach(s => s.classList.add('hidden'));
+            const targetSection = document.getElementById(section);
+            if (targetSection) {
+                targetSection.classList.remove('hidden');
+            }
 
-    
-    const targetSection = document.getElementById(section);
-    if (targetSection) {
-        targetSection.classList.remove('hidden');
-    }
+            buttons.forEach(b => b.classList.remove('active'));
 
-   
-    buttons.forEach(b => b.classList.remove('active'));
-
-  
-    const targetButton = document.getElementById(section + 'Btn');
-    if (targetButton) {
-        targetButton.classList.add('active');
-    }
-}
-
-
-    const targetContent = document.getElementById(contentId);
-    if (targetContent) {
-        targetContent.classList.remove('hiddenxxx');
-    }
-
-    
-    navLinks.forEach(link => {
-        link.classList.remove('activexxx');
-    });
-
-   
-    if (event && event.target) {
-        event.target.classList.add('activexxx');
-    }
-
+            const targetButton = document.getElementById(section + 'Btn');
+            if (targetButton) {
+                targetButton.classList.add('active');
+            }
+        }
 
         function showVision() {
             document.getElementById('visionContent').style.display = 'flex';
@@ -2230,14 +2199,5 @@ function showContent1(section) {
           </div>
       </div>
       </section>
-      <script>
-        // Toggle mobile menu
-        const mobileMenuIcon = document.querySelector('.menu-icon');
-    const navLinks = document.querySelector('.nav-links');
-    
-    mobileMenuIcon.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
-  </script>
 </body>
 </html>
