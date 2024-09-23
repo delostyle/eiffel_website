@@ -3,11 +3,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 body {
   font-family: 'Arial', sans-serif;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 /* Banner Section */
@@ -307,6 +309,9 @@ body {
 }
 
 @media (max-width: 320px) {
+  .project-info h2{
+    font-size: 18px;
+  }
   .banner-content h2 {
     font-size: 16px;
   }

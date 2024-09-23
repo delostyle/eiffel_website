@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    overflow-x: hidden;
 }
 
 .banner {
@@ -213,6 +213,9 @@ margin-top: 10px;
 
 /* Mobile screens (768px and below) */
 @media screen and (max-width: 768px) {
+    .body{
+        overflow-x: hidden;
+    }
     .banner {
         height: auto;
         padding-right: 0;
@@ -311,6 +314,10 @@ margin-top: 10px;
 
 /* Smaller screens (425px and below) */
 @media screen and (max-width: 430px) {
+    .body{
+        overflow-x: hidden;
+    }
+  
     .banner-content {
         padding: 30px;
     }
@@ -383,6 +390,9 @@ margin-top: 10px;
 
 /* Extra small screens (375px and below) */
 @media screen and (max-width: 380px) {
+    .body{
+        overflow-x: hidden;
+    }
     .banner-content{
         padding: 40px;
     }
@@ -460,6 +470,13 @@ margin-top: 10px;
 
 /* Very small screens (320px and below) */
 @media screen and (max-width: 320px) {
+    .body{
+        overflow-x: hidden;
+    }
+    .solution-section {
+        margin-top: -74px;
+        width: 320px;
+    }
     .solution-item.reverse {
         flex-direction: column;
         background-color: #DADCED;
@@ -485,7 +502,7 @@ margin-top: 10px;
         margin-left: -205%;
     }
     .solution-item.reverse .text-head {
-        font-size: 22px;
+        font-size: 20px;
         margin-left: 0px;
         max-width: 100%;
     }
