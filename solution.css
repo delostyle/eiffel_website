@@ -226,6 +226,7 @@ margin-top: 10px;
     .banner-content {
         padding: 40px;
         max-width: 100%;
+        height: 786px;
         overflow: hidden;
     }
 
@@ -244,8 +245,9 @@ margin-top: 10px;
         overflow: hidden;
         margin-top: 0;
     }
-    .text-content{
-        width: 650px;
+        .text-content {
+        max-width: 526px;
+        margin-left: -47px;
     }
     .solution-item {
         flex-direction: column;
@@ -340,12 +342,15 @@ margin-top: 10px;
     .text-hedo{
         max-width: 330px;
     }
-    .text-content{
-        max-width: 390px;
+    .text-content {
+        max-width: 370px;
+        margin-left: 33px;
     }
-   .solution-item.reverse .text-content{
-    max-width: 670px;
-   }
+    .solution-item.reverse .text-content {
+        max-width: 389px;
+        margin-left: -373px;
+    }
+
     .num {
         height: 40px;
         width: 40px;
@@ -373,14 +378,14 @@ margin-top: 10px;
         line-height: 20px;
     }
     .image-content img {
-        width: 304px;
-        height: 276px;
-        margin-left: 13%;
+        width: 300px;
+        height: 200px;
+        margin-left: 8%;
     }
     .solution-item.reverse .image-content img {
-        width: 304px;
+        width: 251px;
         height: 276px;
-        margin-left: -99%;
+        margin-left: -146%;
     }
     .solution-section{
         margin-top: -74px;
@@ -489,7 +494,12 @@ margin-top: 10px;
         display: flex;
         flex: 1;
         padding: 20px;
-        max-width: 335px;
+        max-width: 315px;
+        margin-left: -25px;
+    }
+    .solution-item.reverse .text-content {
+        max-width: 331px;
+        margin-left: -381px;
     }
     .image-content img {
         width: 180px;
