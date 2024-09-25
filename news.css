@@ -110,7 +110,7 @@ body {
     padding: 40px 40px;
     margin-top: 40px;
     max-width: 800px;
-    margin-left: 300px;
+    margin-left: 128px;
     height: 600px;
 }
 
@@ -163,6 +163,10 @@ body {
     align-items: right;
     text-align: right;
 }
+.social-icons a:hover{
+    background-color: #FF962D;
+    cursor: pointer;
+}
 
 .share {
     display: flex;
@@ -213,11 +217,12 @@ body {
         height: 330px;
     }
 
-    .quote {
-        margin-left: 0;
-        max-width: 90%;
-        height: auto;
-        padding: 30px;
+    .profile-image {
+        width: 330px;
+        height: 330px;
+        margin-top: 21px;
+        margin-left: 10px;
+        /* margin-bottom: 0px; */
     }
 
     .quote-text {

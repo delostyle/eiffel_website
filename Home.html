@@ -18,6 +18,10 @@
     body {
         font-family: Arial, sans-serif;
     }
+    .logo img{
+         width: 120px;
+         height: 40px;
+        }
 
     .top-bar {
         background-color: #3d4a95;
@@ -46,7 +50,10 @@
         font-size: 24px;
         margin: 0 15px;
     }
-
+    .social-icons a img:hover{
+                background-color: #FF962D;
+                cursor: pointer;
+            }
     .navbar {
         background-color: #f4f4f4;
         display: flex;
@@ -251,19 +258,20 @@
             padding: 0px;
             width: 100%;
         }
-
+        
         .left-section, .right-section {
             flex: 1 1 100%; 
             padding: 20px;
         }
 
         .left-section {
+
             text-align: center; 
         }
 
         .left-section img {
-            height: 70px;
-            width: 210px;
+            height: 60px;
+            width: 180px;
             max-width: 100%; 
         }
 
@@ -273,6 +281,8 @@
             line-height: 1.6;
             margin-top: 20px;
         }
+       
+
 
         .social-icons {
             display: flex;
@@ -287,6 +297,9 @@
             background-color: #FBE9DA;
             padding: 10px;
             border-radius: 5px;
+        }
+        .social-icons a img :hover{
+            background-color: #FF962D;
         }
 
         .right-section {
@@ -336,6 +349,7 @@
             .left-section {
                 width: 40%;
                 text-align: left;
+                margin-top: 48px;
             }
 
             .right-section {
@@ -881,7 +895,7 @@
       <div class="container-footer">
         <!-- Left Section -->
         <div class="left-section">
-            <a href="./Home.html"><img src="./image//logo.png" alt="Eiffel Logo"></a> 
+            <a href="./Home.html"><img src="./image//logo.png" alt="Eiffel Logo" class="logo"></a> 
             <p>Lorem ipsuLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis telluLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.</p>
             <div class="social-icons">
                 <a href="#"><img src="./image/fb.png" alt="Facebook"></a>
