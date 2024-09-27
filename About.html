@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Story</title>
+    <link rel="stylesheet" href="about.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
@@ -2422,13 +2423,14 @@ margin-top: 20px;
       </div>
       </section>
       <script>
-        // Toggle mobile menu
-        const mobileMenuIcon = document.querySelector('.menu-icon');
-    const navLinks = document.querySelector('.nav-links');
+      // Toggle mobile menu
+      const mobileMenuIcon = document.querySelector('.menu-icon1');
+        const navLinks1 = document.querySelector('.nav-links1');
+        
+        mobileMenuIcon.addEventListener('click', () => {
+            navLinks1.classList.toggle('active');
+        });
     
-    mobileMenuIcon.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
   
     function openCity(evt, cityName) {
         // Hide all content sections

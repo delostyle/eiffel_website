@@ -313,7 +313,7 @@
 
         .right-section .links {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
             position: relative;
             left:40px;
@@ -412,6 +412,7 @@
             .right-section .links {
                 position: relative;
                 left: -1px;
+                flex-direction: row;
             }
         }
         
@@ -632,8 +633,8 @@
         We combine precision, innovation, and collaboration to create structural solutions that stand the test of time. From concept to completion, we turn your vision into reality with unmatched engineering excellence.
       </p>
       <div class="buttons">
-        <button class="btn contact">Get in Touch</button>
-        <button class="btn learn">Learn More</button>
+        <a href="./Contact.html" class="btn contact">Get in Touch</a>
+        <a href="./Press.html" class="btn learn">Learn More</a>
       </div>
     </div>
     </div>
@@ -708,7 +709,7 @@
           </div>
           </div>
         </div>
-        <button class="learn-more-btn">LEARN MORE</button>
+        <a href="./OurSolution.html" class="learn-more-btn">LEARN MORE</a>
       </div>
     </section>
    
@@ -719,7 +720,10 @@
             <h2 class="about-1">ABOUT US</h2>
             <h2 class="about-2">Your Trusted Partner in Engineering Excellence</h2>
             <p class="about-3">At Eiffel Industries, LLC, we specialize in delivering innovative design engineering solutions that align with the latest building codes. Based in Scottsdale, AZ, our team of experts has over two decades of experience and is dedicated to ensuring a smooth and efficient permitting process for your project. From preexisting residential homes to large-scale commercial buildings, we bring knowledge, precision, and a commitment to excellence at every phase of construction.</p>
-            <button class="learn-btn">LEARN MORE</button>
+            <a href="./About.html">
+                <button class="learn-btn">LEARN MORE</button>
+              </a>
+              
         </div>
         <div class="trust-banner">
             <img src="./image/banner.png" alt="banner" class="banner-img">
@@ -784,7 +788,7 @@
         <h3>Our Projects</h3>
         <h1>Transforming Ideas into Structures</h1>
         <p class="pro-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.</p>
-        <a href="#" class="see-btn">SEE ALL</a>
+        <a href="./Projects.html" class="see-btn">SEE ALL</a>
     </div>
     <div class="projects-right">
         <div class="slider">
@@ -837,7 +841,7 @@
           <h4>OUR EXPERTS</h4>
           <h2 class="mastermind">Masterminds Behind Every Build: Skilled Hands, Proven Expertise</h2>
           <p class="master-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.</p>
-          <a href="#" class="cta-button">GET IN TOUCH</a>
+          <a href="./Contact.html" class="cta-button">GET IN TOUCH</a>
       </div>
   
 </section>
@@ -849,7 +853,8 @@
                 <h2>Know Why Our Clients Trust Us</h2>
             </div>
             <div class="testimonial-content">
-                <div class="testimonial-profile">
+                <div class="testimonial-profile
+                ">
                     <div class="man-image">
                         <img src="./image/happyman.png" alt="David William">
                     </div>
