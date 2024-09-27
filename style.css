@@ -498,6 +498,34 @@ max-width: 380px;
   margin-bottom: 20px;
   line-height: 1.6;
 }
+/* Add this to your CSS file if not already present */
+.hidden {
+  display: none;
+}
+
+.tab {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.tab.active {
+  background-color: #ff9800; /* Highlight the active tab */
+  color: white;
+}
+
+.content-section {
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 .see-btn {
   background-color: #2A2B78;
@@ -598,6 +626,9 @@ font-weight: 700;
 line-height: 65px;
 text-align: left;
 
+}
+.trust-banner{
+  width: 2000px;
 }
 .man-img{
 height: 500px;

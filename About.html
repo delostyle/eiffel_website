@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,24 +19,264 @@
             overflow-x: hidden;
             font-family: Arial, sans-serif;
         }
+        .menu-item {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000; /* Default color */
+}
 
-        .container {
+.flex-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    margin-bottom: 20px; /* Adds space below each content section */
+}
+
+.imagexxx {
+    max-width: 40%; /* Adjust width as needed */
+    height: auto; /* Maintains aspect ratio */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.descriptionxxx {
+    flex: 1; /* Allows text to take up remaining space */
+}
+
+/* Hide all contents except the active tab */
+.hiddenxxx {
+    display: none;
+}
+
+/* Show active content */
+.active {
+    display: flex; /* Show in flex layout */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align to left */
+    }
+
+    .imagexxx {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px; /* Space below the image */
+        max-width: 100%; /* Make image responsive */
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Image on the left, text on the right */
+    align-items: center; /* Center the items vertically */
+}
+
+.imagexxx {
+    max-width: 100%; /* Ensures responsiveness */
+    height: auto; /* Maintains aspect ratio */
+    margin-right: 20px; /* Adds space between the image and text */
+}
+
+/* Style for the header section */
+.header-area {
+    text-align: center;
+}
+.background-area{
+    background-image: url(./image/bgtab.png);
+    background-size: cover;
+    background-color: #E9EBFF;
+}
+.header-area h1{
+    font-size: 40px;
+}
+.header-area p{
+    font-size: 20px;
+    color: #FF962D;
+    padding: 30px;
+}
+.tab-img{
+    height: 200px;
+    width: 200px;
+    margin-left: 350px;
+}
+.content-area{
+    height: 400px;
+    padding: 40px;
+}
+
+/* Navbar links */
+.navbar-area {
+    display: flex;
+    justify-content: center;
+    gap:150px;
+    margin: 20px 0;
+    margin-top: 60px;
+}
+
+.tab-item {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black; 
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    border-bottom: 2px solid transparent; /* Default, no underline */
+}
+
+/* Active tab item with orange text and underline */
+.tab-item.active-tab {
+    color: orange; /* Orange color when tab is active */
+    border-bottom: 4px solid orange; /* Underline for active tab */
+}
+
+
+/* Flexbox styling for tab-content to display image and text in a row */
+.tab-content {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Image on the left */
+.tab-content img {
+    max-width: 40%;
+    height: auto;
+}
+
+/* Text on the right */
+.description-area {
+    max-width: 40%;
+    text-align: left;
+    margin-right: 80px;
+}
+.description-area p{
+    font-size: 18px;
+}
+
+/* Display Vision content initially */
+#visionArea {
+    display: flex;
+}
+
+
+.core{
+font-size: 20px;
+font-weight: 800;
+line-height: 27.24px;
+letter-spacing: 0.05em;
+text-align: center;
+color: #FF962D;
+margin-top: 0px;
+margin-bottom: 40px;
+}
+.core-head{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 80px;
+    max-width: 60%;
+    margin-left: 20%;
+}
+.reno{
+font-size: 20px;
+font-weight: 800;
+line-height: 27.24px;
+letter-spacing: 0.05em;
+text-align: center;
+color: #FF962D;
+margin-top: 20px;
+}
+.reno-head{
+font-size: 48px;
+font-weight: 600;
+line-height: 65.37px;
+text-align: center;
+margin-top: 20px;
+
+}
+.selected {
+    font-weight: bold;
+    color: #007bff; /* Active color */
+}
+
+.active-content {
+    display: block; 
+}
+#residential {
+    display: block; 
+}
+        .service-tab{
+         display: flex;
+            color: white;
+        }
+        
+
+        .tab-container {
             display: flex;
             margin: 0 auto;
             width: 100%;
             height: auto;
             max-width: 100vw;
         }
+        
+        .tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
 
         .main-section {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            background-image: url(./image/bgstory.png);
+            background-size: cover;
             padding: 40px;
-            background-color: #f4f4f4;
+            
             margin-top: -84px;
             margin-bottom: 2px;
-            flex-direction: column;
+            flex-direction: row;
             width: 100%;
+        }
+        .team-section1{
+            background-color:#DADCED;
         }
 
         .sidebar {
@@ -369,7 +607,7 @@
         }
 
         .content-section {
-            display: flex;
+            display: none;
             justify-content: space-between;
             align-items: flex-start;
             padding: 20px;
@@ -383,6 +621,10 @@
             padding-right: 20px;
             margin-top: 100px;
         }
+        .text-content p{
+            color: #FFFFFF;
+          
+        }
 
         .image-content {
             flex: 1;
@@ -391,10 +633,8 @@
         }
 
         .image-content img {
-            max-width: 100%;
-            height: 390px;
-            border-radius: 5px;
-            display: block;
+            width: 450px;
+            height: 500px;
         }
 
         @media (max-width: 481px) {
@@ -442,7 +682,8 @@
         }
 
         .our-story-section {
-            width: 100%;
+            max-width: 50%;
+            padding: 20px;
         }
 
         .our-story-section h2 {
@@ -473,9 +714,11 @@
         .grid-item {
             background-color: white;
             padding: 20px;
-            border-radius: 8px;
+            height: 300px;
+           
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
             transition: box-shadow 0.3s ease-in-out;
+            
         }
 
         .grid-item:hover {
@@ -484,13 +727,14 @@
 
         .grid-item h3 {
             color: #f58025;
-            font-size: 24px;
+            font-size: 26px;
             font-weight: bold;
             margin-bottom: 10px;
+            margin-top: 20px;
         }
 
         .grid-item p {
-            font-size: 14px;
+            font-size: 16px;
             line-height: 1.5;
         }
 
@@ -579,8 +823,8 @@
         .containeryyy {
             position: relative;
             width: 100%;
-            height: auto;
-            min-height: 100vh;
+            height: 80vh;
+          
         }
 
         .image-sectionyyy {
@@ -588,18 +832,18 @@
             top: 0;
             left: 0;
             width: auto;
-            height: 90vh;
+            height: 70vh;
             background-image: url('./Images/about1.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            background-attachment: fixed;
+            /* background-attachment: fixed; */
         }
 
         .content-sectionyyy {
             position: relative;
             width: 35%;
-            background-color: rgba(0, 47, 108, 0.9);
+            background-color: #2F378A;
             color: white;
             padding: 40px;
             display: flex;
@@ -607,8 +851,18 @@
             justify-content: center;
             left: 790px;
             z-index: 1;
-            height: 90vh;
+            height: 70vh;
         }
+       .content-sectionyyy h3{
+        margin-top: 0px;
+       }
+       .content-sectionyyy h2{
+        max-width: 400px;
+        
+       }
+       
+
+
 
         h2 {
             font-size: 2rem;
@@ -686,7 +940,7 @@
             background-size: cover;
             background-position: center;
             width: 100%;
-            height: 75vh;
+            height: auto;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -716,6 +970,7 @@
             font-size: 16px;
             margin-bottom: 10px;
             font-weight: bolder;
+            
         }
 
         .navbar {
@@ -972,11 +1227,11 @@
         }
 
         .content2 {
-            width: 50%;
+            max-width: 700px;
         }
 
         .content2 h1 {
-            font-size: 48px;
+            font-size: 42px;
             color: #222;
             font-weight: bold;
             margin-bottom: 40px;
@@ -990,7 +1245,7 @@
         }
 
         .content2 p {
-            font-size: 22px;
+            font-size: 20px;
             color: #666;
             line-height: 1.8;
         }
@@ -1001,22 +1256,16 @@
         }
 
         .img1 img {
-            width: calc(100% + 240px);
-            height: calc(450px + 10px);
+            width: 670px;
+            height: 500px;
             z-index: 1;
+            box-shadow: -27px 27px 0px 0px #FF962D;
             display: block;
             position: relative;
+            margin-left: 60px;
         }
 
-        .orangeboxbehindimg1 {
-            position: absolute;
-            bottom: -10px;
-            z-index: 0;
-            left: -11px;
-            width: 110%;
-            height: 206px;
-            background-color: #f58220;
-        }
+        
 
         @media screen and (max-width: 1024px) {
             .maindiv1 {
@@ -1112,7 +1361,7 @@
         .team-member1 {
             position: relative;
             background-color: white;
-            border-radius: 10px;
+           
             width: 250px;
             height: 300px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -1122,7 +1371,7 @@
         .team-member1 img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+           
             border-bottom: none;
         }
 
@@ -1133,7 +1382,7 @@
             background-color: rgba(255, 255, 255, 0.6);
             color: rgb(0, 0, 0);
             padding: 10px;
-            text-align: center;
+            text-align: left;
         }
 
         .nameposition1 h3 {
@@ -1149,7 +1398,7 @@
             position: relative;
             bottom: 120px;
             left: 0;
-            display: flex;
+   
             justify-content: center;
             align-items: center;
             padding: 0 20px;
@@ -1158,12 +1407,15 @@
         .mainheadingxxx h1 {
             font-size: 36px;
             margin: 0;
+            max-width: 600px;
+            text-align: center;
         }
 
         .last {
             position: relative;
-            top: 180px;
+            top: 90px;
             margin-bottom: 210px;
+            height: 800px;
         }
 
         nav {
@@ -1178,47 +1430,48 @@
         }
 
         .nav-linkxxx {
-            margin: 0 120px;
-            cursor: pointer;
-            font-size: 2rem;
-            position: relative;
-        }
+    cursor: pointer; /* Changes the cursor to a pointer for clickable items */
+    padding: 10px; /* Add some padding for better spacing */
+    color: black; /* Default text color for inactive tabs */
+    text-decoration: none; /* Remove underline from links */
+    position: relative; /* For positioning the underline */
+}
 
-        .nav-linkxxx.activexxx::after,
-        .nav-linkxxx:hover::after {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 4px;
-            background-color: orange;
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-        }
+.nav-linkxxx.active-tab {
+    color: orange; /* Set text color to orange for the active tab */
+}
 
-        .contentxxx {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            max-width: 1200px;
-            margin-top: 20px;
-            padding: 0 20px;
-            margin-left: 186px;
-        }
+/* Create the underline effect */
+.nav-linkxxx.active-tab::after {
+    content: ""; /* Required for the pseudo-element */
+    display: block; /* Make it a block element */
+    width: 100%; /* Full width */
+    height: 4px; /* Thickness of the underline */
+    background-color: orange; /* Underline color */
+    position: absolute; /* Position it relative to the parent */
+    left: 0; /* Align to the left */
+    bottom: -5px; /* Space below the text */
+}
+
 
         .contentxxx img {
-            width: 500px;
-            height: 300px;
+            width: 650px;
+            height: 450px;
             object-fit: cover;
+            margin-left: 150px;
         }
 
         .descriptionxxx {
             width: 50%;
             font-size: 1.5rem;
             line-height: 1.7;
-            margin-left: 20px;
-            position: relative;
-            top: 33px;
+            margin-left: 60px;
+            max-width: 650px;
+           
+            
+        }
+        .descriptionxxx p{
+            font-size: 18px;
         }
 
         .hiddenxxx {
@@ -1503,6 +1756,7 @@
                 position: relative;
                 left:40px;
                 top: 100px;
+                /* max-width: 600px; */
             }
     
             .links ul {
@@ -1802,7 +2056,7 @@
             <a href="./Gallery.html">Gallery</a>
             <a href="./OurSolution.html">Our Solutions</a>
             <a href="./Projects.html">Project</a>
-            <a href="./pressNews.html">Press</a>
+            <a href="./Press.html">Press</a>
             <a href="./Contact.html">Contact</a>
         </div>
         <div class="mobile-menu-icon1">
@@ -1873,188 +2127,139 @@
         <a href="javascript:void(0);" id="seeAllButton">SEE ALL</a>
     </div>
 
-    <div class="container">
+   <div>
+   <h5 class="reno">OUR SERVICES</h5>
+   <h1 class="reno-head">Comprehensive Structural Engineering Services</h1>
+    <div class="tab-container">
+       
         <div class="sidebar">
-            <button onclick="showContent1('residential')" id="residentialBtn">Residential Homes</button>
-            <button onclick="showContent1('healthcare')" id="healthcareBtn">Healthcare Structures</button>
-            <button onclick="showContent1('education')" id="educationBtn">Educational Facilities</button>
-            <button onclick="showContent1('industrial')" id="industrialBtn">Industrial Buildings</button>
-            <button onclick="showContent1('commercial')" id="commercialBtn">Commercial Projects</button>
-            <button onclick="showContent1('renovations')" id="renovationsBtn">Renovations & Retrofits</button>
+            <!-- The first button is given an 'active' class by default -->
+            <button onclick="openCity(event, 'residential')" id="residentialBtn" class="tablinks active">Residential Homes</button>
+            <button onclick="openCity(event, 'healthcare')" id="healthcareBtn" class="tablinks">Healthcare Structures</button>
+            <button onclick="openCity(event, 'education')" id="educationBtn" class="tablinks">Educational Facilities</button>
+            <button onclick="openCity(event, 'industrial')" id="industrialBtn" class="tablinks">Industrial Buildings</button>
+            <button onclick="openCity(event, 'commercial')" id="commercialBtn" class="tablinks">Commercial Projects</button>
+            <button onclick="openCity(event, 'renovations')" id="renovationsBtn" class="tablinks">Renovations & Retrofits</button>
         </div>
+
         <div class="content">
-            <div id="residential" class="content-section">
+            <!-- Only the first content section is displayed by default -->
+            <div id="residential" class="content-section active-content">
+                <div class="service-tab">
                 <div class="text-content">
                     <h2>Residential Homes</h2>
                     <p>
-                        At Eiffel Industries, LLC, we specialize in designing and engineering residential homes.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sit architecto expedita ipsa corrupti temporibus omnis delectus at, 
-                        repudiandae magni veniam quas. Cupiditate eos aliquam enim consectetur eveniet quam perspiciatis.
+                        At Eiffel Industries, LLC, we specialize in designing and engineering residential homes that prioritize safety, comfort, and modern living. Whether it’s a single-family home or a multifamily complex, our focus is on creating structures that are not only aesthetically pleasing but also built to last. We incorporate sustainable materials and energy-efficient solutions to ensure that homes remain eco-friendly and cost-effective for homeowners. Our team works closely with developers and homeowners to bring their vision to life, ensuring that every space is functional, inviting, and tailored to modern living needs.
                     </p>
                 </div>
                 <div class="image-content">
-                    <img src="./Images/about2.png" alt="Residential Homes">
+                    <img src="./image/sd1.png" alt="Residential Homes">
                 </div>
             </div>
+            </div>
 
-            <div id="healthcare" class="content-section hidden">
+            <div id="healthcare" class="content-section">
+                <div class="service-tab">
                 <div class="text-content">
                     <h2>Healthcare Structures</h2>
-                    <p>
-                        We develop cutting-edge healthcare structures that prioritize safety and functionality. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Etiam vitae sapien metus. Vivamus pharetra ante eget quam lacinia, sit amet sodales est malesuada.
-                    </p>
+                    <p>We bring specialized expertise to healthcare projects, designing hospitals, clinics, and medical facilities that adhere to stringent safety and regulatory standards. At Eiffel Industries, LLC, we understand the unique needs of healthcare environments, from patient accessibility to efficient workflows for medical staff. Our designs focus on creating safe, sterile, and comfortable spaces that promote healing and ensure operational efficiency. Each project is approached with precision and attention to detail, ensuring that the facilities meet both immediate healthcare needs and long-term adaptability.</p>
                 </div>
                 <div class="image-content">
-                    <img src="./Images/Frame 179.png" alt="Healthcare Structures">
+                    <img src="./image/sd2.png" alt="Healthcare Structures">
                 </div>
             </div>
+            </div>
 
-            <div id="education" class="content-section hidden">
+            <div id="education" class="content-section">
+                <div class="service-tab">
                 <div class="text-content">
                     <h2>Educational Facilities</h2>
-                    <p>
-                        Our focus on educational facilities is to provide innovative learning spaces that inspire students. Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Pellentesque eleifend, odio vel tristique auctor, lectus nisl posuere risus, at vehicula dolor mi at est.
-                    </p>
+                    <p>At Eiffel Industries, LLC, we understand the unique challenges and requirements that come with designing Educational Facilities. From schools and universities to student housing, our team is dedicated to creating safe, functional, and inspiring spaces where students and educators can thrive. We ensure that every project meets strict safety standards, while also integrating sustainable practices to build eco-friendly environments conducive to learning.
+                        Our designs focus on durability and adaptability, ensuring that the buildings can evolve with changing educational needs. Whether it's designing classrooms, libraries, laboratories, or dormitories, we work closely with institutions to develop efficient, cost-effective structures that foster creativity, collaboration, and growth. </p>
                 </div>
                 <div class="image-content">
-                    <img src="./Images/about2 3.png" alt="Educational Facilities">
+                    <img src="./image/sd3.png" alt="Educational Facilities">
+                </div>
                 </div>
             </div>
 
-            <div id="industrial" class="content-section hidden">
+            <div id="industrial" class="content-section">
+                <div class="service-tab">
                 <div class="text-content">
                     <h2>Industrial Buildings</h2>
-                    <p>
-                        We design industrial buildings that are efficient and functional to meet the growing demands of various industries. Lorem ipsum dolor sit amet, 
-                        consectetur adipiscing elit. Mauris at libero nec lectus vulputate elementum.
-                    </p>
+                    <p>Eiffel Industries, LLC offers tailored engineering solutions for industrial facilities, including warehouses, factories, and manufacturing plants. Our designs emphasize efficiency, durability, and scalability, allowing industrial operations to run smoothly while minimizing operational costs. We ensure that every industrial building is built to withstand heavy equipment, high-traffic areas, and the demands of large-scale production. With a focus on cost-effective construction methods and compliance with industry standards, we help our clients achieve their operational goals with structures built for performance and longevity.</p>
                 </div>
                 <div class="image-content">
-                    <img src="./Images/about2 4.png" alt="Industrial Buildings">
+                    <img src="./image/sd4.png" alt="Industrial Buildings">
+                </div>
                 </div>
             </div>
 
-            <div id="commercial" class="content-section hidden">
+            <div id="commercial" class="content-section">
+                <div class="service-tab">
                 <div class="text-content">
                     <h2>Commercial Projects</h2>
-                    <p>
-                        Our team works on commercial projects that are impactful and modern, catering to the needs of businesses. Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Suspendisse potenti. Integer varius felis id mi laoreet, a lobortis magna feugiat.
-                    </p>
+                    <p>Eiffel Industries, LLC provides comprehensive structural engineering services for commercial projects ranging from corporate offices to small businesses. We understand that commercial spaces need to be versatile, cost-efficient, and designed for growth. Our team focuses on creating durable and flexible structures that can adapt to the changing needs of businesses while ensuring compliance with all safety and building codes. Whether it's designing retail spaces or office complexes, we deliver innovative solutions that enhance both functionality and aesthetic appeal.</p>
                 </div>
                 <div class="image-content">
-                    <img src="./Images/about2 3.png" alt="Commercial Projects">
+                    <img src="./image/sd5.png" alt="Commercial Projects">
+                </div>
                 </div>
             </div>
 
-            <div id="renovations" class="content-section hidden">
+            <div id="renovations" class="content-section">
+                <div class="service-tab">
                 <div class="text-content">
                     <h2>Renovations & Retrofits</h2>
-                    <p>
-                        We specialize in renovations and retrofits that bring new life to existing structures, while maintaining their integrity. Lorem ipsum dolor sit amet, 
-                        consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
-                    </p>
+                    <p>Our renovation and retrofitting services at Eiffel Industries, LLC are designed to modernize existing structures while improving safety and functionality. Whether it's updating older buildings to meet current codes or enhancing their efficiency, we approach each project with a focus on preserving the structure’s integrity while integrating new technologies and design innovations. We work closely with property owners and contractors to ensure that every renovation is seamless, cost-effective, and adds long-term value to the building.</p>
                 </div>
                 <div class="image-content">
-                    <img src="./Images/Frame 179.png" alt="Renovations & Retrofits">
+                    <img src="./image/sd6.png" alt="Renovations & Retrofits">
+                </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+ 
 
-    <script>
-        document.getElementById('seeAllButton').addEventListener('click', function() {
-            const hiddenItems = document.querySelectorAll('.grid-item:nth-child(n+3)');
-            hiddenItems.forEach(item => {
-                item.style.display = 'block';
-            });
-            this.style.display = 'none';
-        });
-
-       // Function for handling sections with class '.contentxxx' and nav links '.nav-linkxxx'
-       function showContent(contentId) {
-            const contents = document.querySelectorAll('.contentxxx');
-            const navLinks = document.querySelectorAll('.nav-linkxxx');
-
-            contents.forEach(content => {
-                content.classList.add('hiddenxxx');
-            });
-
-            const targetContent = document.getElementById(contentId);
-            if (targetContent) {
-                targetContent.classList.remove('hiddenxxx');
-            }
-
-            navLinks.forEach(link => {
-                link.classList.remove('activexxx');
-            });
-
-            if (event && event.target) {
-                event.target.classList.add('activexxx');
-            }
-        }
-
-        function showContent1(section) {
-            const sections = document.querySelectorAll('.content-section');
-            const buttons = document.querySelectorAll('.sidebar button');
-
-            sections.forEach(s => s.classList.add('hidden'));
-
-            const targetSection = document.getElementById(section);
-            if (targetSection) {
-                targetSection.classList.remove('hidden');
-            }
-
-            buttons.forEach(b => b.classList.remove('active'));
-
-            const targetButton = document.getElementById(section + 'Btn');
-            if (targetButton) {
-                targetButton.classList.add('active');
-            }
-        }
-        function showVision() {
-            document.getElementById('visionContent').style.display = 'flex';
-            document.getElementById('missionContent').style.display = 'none';
-            document.getElementById('visionLink').classList.add('active');
-            document.getElementById('missionLink').classList.remove('active');
-        }
-
-        function showMission() {
-            document.getElementById('visionContent').style.display = 'none';
-            document.getElementById('missionContent').style.display = 'flex';
-            document.getElementById('missionLink').classList.add('active');
-            document.getElementById('visionLink').classList.remove('active');
-        }
-    </script>
-
-    <div class="background-section">
-        <div class="header-section">
-            <p class="highlight-text">OUR VISION AND MISSION</p>
-            <h1>Building the Future with Integrity and Innovation</h1>
-        </div>
-        <div class="navbar">
-            <a id="visionLink" class="active" onclick="showVision()">Our Vision</a>
-            <a id="missionLink" onclick="showMission()">Our Mission</a>
-        </div>
-
-        <div class="content-wrapper1">
-            <div id="visionContent" class="content1">
-                <img src="./Images/kachuamsiion.png" alt="Vision Logo">
-                <div class="description1">
-                    <p>At Eiffel Industries, LLC, our vision is to shape the future of structural engineering by creating innovative, sustainable, and lasting solutions that stand the test of time...</p>
-                </div>
+<div class="background-area">
+    <div class="header-area">
+        <p class="highlight-text">OUR VISION AND MISSION</p>
+        <h1>Building the Future with Integrity and Innovation</h1>
+    </div>
+    <div class="navbar-area">
+        <!-- Set 'active-tab' class by default to the Vision tab -->
+        <a id="visionTab" class="tab-item active-tab" onclick="showVision()">Our Vision</a>
+        <a id="missionTab" class="tab-item" onclick="showMission()">Our Mission</a>
+        
+    </div>
+    <hr style="width:90%;text-align:center;margin-left: 100px;color: #B9B9B9;opacity: 20%;">
+    <div class="content-area">
+        <!-- Display Vision content by default -->
+        <div id="visionArea" class="tab-content active-content">
+            <img src="./image/vs.png" alt="Vision Logo" class="tab-img">
+            <div class="description-area">
+                <p>
+                    At Eiffel Industries, LLC, our vision is to shape the future of structural engineering by creating innovative, sustainable, and lasting solutions that stand the test of time. We aim to be recognized as a leader in the industry, known for our commitment to excellence, integrity, and forward-thinking design. By embracing cutting-edge technology and fostering collaboration with our clients, we strive to build structures that not only meet today’s needs but also inspire future generations. Our goal is to leave a positive, lasting impact on the communities we serve through every project we undertake.
+                </p>
             </div>
+        </div>
 
-            <div id="missionContent" class="content1" style="display: none;">
-                <img src="./Images/compassvision.png" alt="Mission Logo">
-                <div class="description1">
-                    <p>At Eiffel Industries, LLC, our mission is to deliver innovative engineering solutions through collaboration, sustainability, and cutting-edge technology, ensuring that we positively impact future generations...</p>
-                </div>
+        <!-- Hide Mission content by default -->
+        <div id="missionArea" class="tab-content">
+            <img src="./image/ms.png" alt="Mission Logo" class="tab-img">
+            <div class="description-area">
+                <p>
+                    At Eiffel Industries, LLC, our mission is to shape the future of structural engineering by delivering innovative, cost-effective, and sustainable solutions. We are committed to exceeding client expectations by providing safe, high-quality designs that are built to last. Through collaboration with architects, contractors, and property owners, we ensure every project is executed with precision, efficiency, and integrity, fostering long-term relationships and contributing to the communities we serve. Our focus is on building not just structures, but legacies of trust, reliability, and excellence.
+                </p>
             </div>
         </div>
     </div>
+</div>
+
+
+    
 
     <div class="maindiv1">
         <div class="content2">
@@ -2075,7 +2280,7 @@
 
         <div class="team-grid1" style="gap: 150px;">
             <div class="team-member1">
-                <img src="./Images/jane.png" alt="Jane Cooper">
+                <img src="./image/m1.png" alt="Jane Cooper">
                 <div class="nameposition1">
                     <h3>Jane Cooper</h3>
                     <p>Founder & CEO</p>
@@ -2083,7 +2288,7 @@
             </div>
 
             <div class="team-member1">
-                <img src="./Images/warren.png" alt="Wade Warren">
+                <img src="./image/m2.png" alt="Wade Warren">
                 <div class="nameposition1">
                     <h3>Wade Warren</h3>
                     <p>Managing Director</p>
@@ -2091,7 +2296,7 @@
             </div>
 
             <div class="team-member1">
-                <img src="./Images/sym.png" alt="Brooklyn Simmons">
+                <img src="./image/m3.png" alt="Brooklyn Simmons">
                 <div class="nameposition1">
                     <h3>Brooklyn Simmons</h3>
                     <p>Finance Manager</p>
@@ -2099,7 +2304,7 @@
             </div>
 
             <div class="team-member1">
-                <img src="./Images/warren.png" alt="Brooklyn Simmons">
+                <img src="./image/m4.png" alt="Brooklyn Simmons">
                 <div class="nameposition1">
                     <h3>Brooklyn Simmons</h3>
                     <p>HR Manager</p>
@@ -2108,45 +2313,55 @@
         </div>
     </section>
 
-    <div class="last">
-        <div class="mainheadingxxx">
-            <h1>Building a Legacy of Excellence and Innovation in Structural Engineering</h1>
-        </div>
+    <div class="last">   
+        <h5 class="core">CORE VALUES</h5>
+        <h1 class="core-head">Building a Legacy of Excellence and Innovation in Structural Engineering</h1>
+    
         <nav>
-            <span class="nav-linkxxx activexxx" onclick="showContent('integrityxxx')">Integrity</span>
+            <span class="nav-linkxxx active-tab" onclick="showContent('integrityxxx')">Integrity</span>
             <span class="nav-linkxxx" onclick="showContent('qualityxxx')">Quality</span>
             <span class="nav-linkxxx" onclick="showContent('innovationxxx')">Innovation</span>
             <span class="nav-linkxxx" onclick="showContent('sustainabilityxxx')">Sustainability</span>
         </nav>
-
-        <div id="integrityxxx" class="contentxxx">
-            <img src="./Images/mis.png" alt="Integrity">
+    
+        <div id="integrityxxx" class="contentxxx flex-container">
+            <img src="./image/in1.png" alt="Integrity" class="imagexxx">
             <div class="descriptionxxx">
-                <p>Our commitment to integrity drives everything we do. We ensure that our designs are built with the highest ethical standards, fostering trust and reliability.</p>
+                <p>
+                    At Eiffel Industries, LLC, integrity is the foundation of everything we do. We uphold the highest standards of honesty, transparency, and accountability in all our projects. Whether working with clients, contractors, or our team, we prioritize open communication and ethical practices at every stage of the process. Our commitment to integrity ensures that we deliver what we promise—no shortcuts, no compromises—building trust and long-lasting relationships with every partner we work with.
+                </p>
             </div>
         </div>
-
-        <div id="qualityxxx" class="contentxxx hiddenxxx">
-            <img src="./Images/ghar.png" alt="Quality">
+    
+        <div id="qualityxxx" class="contentxxx hiddenxxx flex-container">
+            <img src="./image/in2.png" alt="Quality" class="imagexxx">
             <div class="descriptionxxx">
-                <p>Our commitment to quality is unwavering. We strive for excellence in every project, ensuring that each structure we design is not only functional and safe but also built to last.</p>
+                <p>
+                    Quality drives our approach to structural engineering at Eiffel Industries, LLC. We continually seek new methods, materials, and technologies to improve the quality, efficiency, and sustainability of our designs. By staying at the forefront of industry advancements, we’re able to offer cutting-edge solutions that meet modern needs while anticipating future challenges. Our forward-thinking approach allows us to create unique, cost-effective, and high-performing structures that set new benchmarks in the industry.
+                </p>
             </div>
         </div>
-
-        <div id="innovationxxx" class="contentxxx hiddenxxx">
-            <img src="./Images/Frame 179.png" alt="Innovation">
+    
+        <div id="innovationxxx" class="contentxxx hiddenxxx flex-container">
+            <img src="./image/in3.png" alt="Innovation" class="imagexxx">
             <div class="descriptionxxx">
-                <p>We innovate constantly, exploring new technologies and methodologies to improve the design and construction process and deliver superior results.</p>
+                <p>
+                    Innovation drives our approach to structural engineering at Eiffel Industries, LLC. We continually seek new methods, materials, and technologies to improve the quality, efficiency, and sustainability of our designs. By staying at the forefront of industry advancements, we’re able to offer cutting-edge solutions that meet modern needs while anticipating future challenges. Our forward-thinking approach allows us to create unique, cost-effective, and high-performing structures that set new benchmarks in the industry.
+                </p>
             </div>
         </div>
-
-        <div id="sustainabilityxxx" class="contentxxx hiddenxxx">
-            <img src="./Images/mis.png" alt="Sustainability">
+    
+        <div id="sustainabilityxxx" class="contentxxx hiddenxxx flex-container">
+            <img src="./image/img3.png" alt="Sustainability" class="imagexxx">
             <div class="descriptionxxx">
-                <p>Sustainability is at the heart of our work. We design structures that minimize environmental impact and contribute to the well-being of future generations.</p>
+                <p>
+                    Sustainability drives our approach to structural engineering at Eiffel Industries, LLC. We continually seek new methods, materials, and technologies to improve the quality, efficiency, and sustainability of our designs. By staying at the forefront of industry advancements, we’re able to offer cutting-edge solutions that meet modern needs while anticipating future challenges. Our forward-thinking approach allows us to create unique, cost-effective, and high-performing structures that set new benchmarks in the industry.
+                </p>
             </div>
         </div>
     </div>
+    
+    
 
 
      
@@ -2214,6 +2429,96 @@
     mobileMenuIcon.addEventListener('click', () => {
         navLinks.classList.toggle('active');
     });
+  
+    function openCity(evt, cityName) {
+        // Hide all content sections
+        var i, contentSections, tablinks;
+        contentSections = document.getElementsByClassName("content-section");
+        for (i = 0; i < contentSections.length; i++) {
+            contentSections[i].style.display = "none"; // Hide all sections
+        }
+
+        // Remove the active class from all tablinks
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the selected content section and mark the clicked tab as active
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Set the first tab and its content to be displayed by default on page load
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById('residential').style.display = 'block'; // Show the first content section
+        document.getElementById('residentialBtn').classList.add('active'); // Set the first button as active
+    });
+
+
+        function showVision() {
+    document.getElementById('visionContent').style.display = 'block';
+    document.getElementById('missionContent').style.display = 'none';
+    
+    // Update active tab
+    document.getElementById('visionLink').classList.add('active-tab');
+    document.getElementById('missionLink').classList.remove('active-tab');
+}
+
+function showVision() {
+    // Show Vision content
+    document.getElementById("visionArea").style.display = "flex";
+    document.getElementById("missionArea").style.display = "none";
+
+    // Add orange color for the Vision tab and remove from the Mission tab
+    document.getElementById("visionTab").classList.add("active-tab");
+    document.getElementById("missionTab").classList.remove("active-tab");
+}
+
+function showMission() {
+    // Show Mission content
+    document.getElementById("visionArea").style.display = "none";
+    document.getElementById("missionArea").style.display = "flex";
+
+    // Add orange color for the Mission tab and remove from the Vision tab
+    document.getElementById("missionTab").classList.add("active-tab");
+    document.getElementById("visionTab").classList.remove("active-tab");
+}
+
+// Ensure Vision tab is selected by default on page load
+document.addEventListener("DOMContentLoaded", function() {
+    showVision(); // Vision tab and content should be active by default
+});
+
+  
+
+function showContent(id) {
+    // Hide all content
+    const contents = document.querySelectorAll('.contentxxx');
+    contents.forEach(content => {
+        content.classList.add('hiddenxxx');
+    });
+
+    // Remove active class from all nav links
+    const navLinks = document.querySelectorAll('.nav-linkxxx');
+    navLinks.forEach(link => {
+        link.classList.remove('active-tab');
+    });
+
+    // Show the selected content
+    const selectedContent = document.getElementById(id);
+    selectedContent.classList.remove('hiddenxxx');
+    selectedContent.classList.add('active'); // Add active class to display it
+
+    // Set the active class for the clicked link
+    const activeLink = Array.from(navLinks).find(link => link.onclick.toString().includes(id));
+    if (activeLink) {
+        activeLink.classList.add('active-tab');
+    }
+}
+
+
+
   </script>
 </body>
 </html>
