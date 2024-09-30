@@ -44,7 +44,6 @@
                 background-color: #FF962D;
                 cursor: pointer;
             }
-  
       .social-media a {
           color: white;
           font-size: 24px;
@@ -331,253 +330,338 @@
               text-decoration: underline;
           }
   
-         
-          @media (min-width: 848px) {
-              .container-footer {
-                  flex-wrap: nowrap;
-              }
-  
-              .left-section {
-                  width: 40%;
-                  text-align: left;
-              }
-  
-              .right-section {
-                  width: 60%;
-                  clip-path: polygon(16% 0%, 100% 0%, 100% 100%, 0% 100%);
-                  text-align: left;
-                  padding: 20px;
-              }
-  
-              .right-section .links {
-                  position: relative;
-                  left: 33px;
-                  right: 30px;
-              }
-  
-              .right-section .links {
-                  flex-direction: row;
-                  justify-content: space-evenly;
-                  position: relative;
-              }
-  
-              .links ul {
-                  padding: 40px;
-              }
-          }
-  
-          @media (max-width: 848px) {
-              .left-section {
-                  width: 100%;
-              }
-  
-              .right-section {
-                  width: 100%;
-              }
-  
-              .right-section .links {
-                  flex-direction: row; 
-                  justify-content: space-evenly;
-                  position: relative; 
-                  align-items: flex-start;
-                  left: 19px;
-                  top: 68px;
-      }
-              }
-  
-              .links ul {
-                  padding: 10px; 
-              }
-          
-              
-          @media (max-width: 480px) {
-              .left-section p {
-                  font-size: 14px;
-              }
-  
-              .social-icons a img {
-                  width: 30px;
-                  height: 30px;
-              }
-  
-              .right-section {
-                  padding: 10px;
-              }
-  
-              .links ul li {
-                  font-size: 14px;
-              }
-  
-              .right-section .links {
-                  position: relative;
-                  left: -1px;
-              }
-          }
-          
-  @media (max-width: 768px) {
-      .newsletter-section {
-          height: auto;
-          padding: 20px;
-      }
-  
-      .newsletter-title {
-          font-size: 18px;
-      }
-  
-      .newsletter-heading {
-          font-size: 20px;
-          margin-bottom: 15px;
-      }
-  
-      .subscription-form input {
-          width: 300px;
-          padding: 12px;
-          font-size: 14px;
-      }
-  
-      .subscription-form button {
-          padding: 12px 20px;
-          width: 180px;
-          font-size: 14px;
-      }
-  }
-  
-  
-  @media (max-width: 640px) {
-      .newsletter-heading {
-          font-size: 20px;
-          margin-bottom: 10px;
-          line-height: 1.4;
-      }
-  
-      .subscription-form {
-          flex-direction: column;
-          align-items: center;
-      }
-  
-      .subscription-form input {
-          width: 100%;
-          max-width: 400px;
-          border-radius: 5px;
-          margin-bottom: 10px;
-      }
-  
-      .subscription-form button {
-          width: 100%;
-          max-width: 200px;
-          border-radius: 5px;
-      }
-  }
-  
-  
-  @media (max-width: 480px) {
-      .newsletter-section {
-          padding: 15px;
-      }
-  
-      .newsletter-heading {
-          font-size: 20px;
-          margin-bottom: 10px;
-      }
-  
-      .newsletter-title {
-          font-size: 16px;
-      }
-  
-      .subscription-form input {
-          font-size: 14px;
-          padding: 10px;
-          max-width: 300px;
-      }
-  
-      .subscription-form button {
-          font-size: 14px;
-          padding: 10px 20px;
-          max-width: 150px;
-      }
-  }
-  
-  @media (max-width: 320px) {
-      .newsletter-heading {
-          font-size: 18px;
-      }
-  
-      .subscription-form input {
-          font-size: 12px;
-          padding: 8px;
-          max-width: 260px;
-      }
-  
-      .subscription-form button {
-          font-size: 12px;
-          padding: 8px 12px;
-          max-width: 120px;
-      }
-  }
-          .newsletter-section {
-              height: auto;
-              width: 100%;
-              background-image: url('./image/bgframe.png') !important;
-              background-size: cover;
-              background-position: center;
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-              text-align: center;
-          }
-  
-          .newsletter-title {
-              margin-top: 20px;
-              color: rgba(255, 145, 0, 0.904);
-              font-size: 22px;
-              margin-bottom: 10px;
-              font-weight: bolder;
-              text-transform: uppercase;
-              letter-spacing: 1px;
-          }
-  
-          .newsletter-heading {
-              color: #344b86;
-              font-size: 22px;
-              margin-bottom: 20px;
-              font-size: 50px;
-              font-weight: bolder;
-          }
-  
-          .subscription-form {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-          }
-  
-          .subscription-form input {
-              padding: 15px;
-              width: 450px;
-              border: none;
-              margin-bottom: 20px;
-              outline: none;
-              font-size: 16px;
-              border-radius: 5px 0 0 5px;
-              box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-          }
-  
-          .subscription-form button {
-              margin-bottom: 20px;
-              padding: 15px 30px;
-              background-color: rgba(255, 145, 0, 0.856);
-              color: white;
-              border: none;
-              font-size: 16px;
-              cursor: pointer;
-              width:280px;
-              border-radius: 0 5px 5px 0;
-              transition: background-color 0.3s ease;
-          }
-  
-          .subscription-form button:hover {
-              background-color: #ff8500;
-          }
+          .container-footer{
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-between;
+            background-color: white;
+            padding: 0px;
+            width: 100%;
+        }
+        
+        .left-section, .right-section {
+            flex: 1 1 100%; 
+            padding: 20px;
+        }
+
+        .left-section {
+
+            text-align: center; 
+        }
+
+        .left-section img {
+            height: 60px;
+            width: 180px;
+            max-width: 100%; 
+        }
+
+        .left-section p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+       
+
+
+        .social-icons {
+            display: flex;
+            justify-content: flex-start; 
+            margin-top: 20px;
+            gap: 10px;
+        }
+
+        .social-icons a img {
+            width: 35px;
+            height: 35px;
+            background-color: #FBE9DA;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .social-icons a img :hover{
+            background-color: #FF962D;
+        }
+
+        .right-section {
+            background-color: #2D358A;
+            color: rgb(231, 226, 226);
+            clip-path: none;
+            text-align: center;
+            padding: 20px 10px;
+            height:60vh
+        }
+
+        .right-section .links {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+            left:40px;
+            top: 100px;
+        }
+
+        .links ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .links ul li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .links ul li a {
+            text-decoration: none;
+            color: rgb(211, 205, 205);
+        }
+
+        .links ul li a:hover {
+            text-decoration: underline;
+        }
+
+       
+        @media (min-width: 768px) {
+            .container-footer {
+                flex-wrap: nowrap;
+            }
+
+            .left-section {
+                width: 40%;
+                text-align: left;
+                margin-top: 48px;
+            }
+
+            .right-section {
+                width: 60%;
+                clip-path: polygon(16% 0%, 100% 0%, 100% 100%, 0% 100%);
+                text-align: left;
+                padding: 20px;
+            }
+
+
+            .right-section .links {
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: relative;
+        align-items: flex-start;
+        left: 30px;
+        top:10px;
+        max-width: 688px;
+    }
+            .links ul {
+                padding: 40px;
+            }
+        }
+
+        @media (max-width: 848px) {
+            .left-section {
+                width: 100%;
+            }
+
+            .right-section {
+                width: 100%;
+            }
+
+            
+            }
+
+            .links ul {
+                padding: 10px; 
+            }
+        
+            
+        @media (max-width: 480px) {
+            .left-section p {
+                font-size: 14px;
+            }
+
+            .social-icons a img {
+                width: 30px;
+                height: 30px;
+            }
+
+            .right-section {
+                padding: 10px;
+            }
+
+            .links ul li {
+                font-size: 14px;
+            }
+
+            .right-section .links {
+                position: relative;
+                left: -19px;
+                flex-direction: row;
+                top: 20px;
+    margin: 10px;
+            }
+        }
+        
+@media (max-width: 768px) {
+    .newsletter-section {
+        height: auto;
+        padding: 20px;
+    }
+
+    .newsletter-title {
+        font-size: 18px;
+    }
+
+    .newsletter-heading {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .subscription-form input {
+        width: 300px;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .subscription-form button {
+        padding: 12px 20px;
+        width: 180px;
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 640px) {
+    .newsletter-heading {
+        font-size: 20px;
+        margin-bottom: 10px;
+        line-height: 1.4;
+    }
+
+    .subscription-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscription-form input {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .subscription-form button {
+        width: 100%;
+        max-width: 200px;
+        border-radius: 5px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .newsletter-section {
+        padding: 15px;
+    }
+
+    .newsletter-heading {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .newsletter-title {
+        font-size: 16px;
+    }
+
+    .subscription-form input {
+        font-size: 14px;
+        padding: 10px;
+        max-width: 300px;
+    }
+
+    .subscription-form button {
+        font-size: 14px;
+        padding: 10px 20px;
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 320px) {
+    .newsletter-heading {
+        font-size: 18px;
+    }
+
+    .subscription-form input {
+        font-size: 12px;
+        padding: 8px;
+        max-width: 260px;
+    }
+
+    .subscription-form button {
+        font-size: 12px;
+        padding: 8px 12px;
+        max-width: 120px;
+    }
+}
+        .newsletter-section {
+            height: auto;
+            width: 100%;
+            background-image: url('./image/bgframe.png') !important;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .newsletter-title {
+            margin-top: 20px;
+            color: rgba(255, 145, 0, 0.904);
+            font-size: 22px;
+            margin-bottom: 10px;
+            font-weight: bolder;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .newsletter-heading {
+            color: #344b86;
+            font-size: 22px;
+            margin-bottom: 20px;
+            font-size: 50px;
+            font-weight: bolder;
+        }
+
+        .subscription-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .subscription-form input {
+            padding: 15px;
+            width: 450px;
+            border: none;
+            margin-bottom: 20px;
+            outline: none;
+            font-size: 16px;
+            border-radius: 5px 0 0 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .subscription-form button {
+            margin-bottom: 20px;
+            padding: 15px 30px;
+            background-color: rgba(255, 145, 0, 0.856);
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            width:280px;
+            border-radius: 0 5px 5px 0;
+            transition: background-color 0.3s ease;
+        }
+
+        .subscription-form button:hover {
+            background-color: #ff8500;
+        }
   </style>
   </head>
   
@@ -722,7 +806,7 @@
     <div class="container-footer">
       <!-- Left Section -->
       <div class="left-section">
-        <a href="./Home.html"><img src="./image//logo.png" alt="Eiffel Logo"></a> 
+          <a href="./Home.html"><img src="./image//logo.png" alt="Eiffel Logo" class="logo"></a> 
           <p>Lorem ipsuLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis telluLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.</p>
           <div class="social-icons">
               <a href="#"><img src="./image/fb.png" alt="Facebook"></a>
@@ -739,6 +823,7 @@
               <ul>
                   <li><strong>Explore</strong></li>
                   <li><a href="./Home.html">Home</a></li>
+                  <li><a href="./About.html">About</a></li>
                   <li><a href="./Gallery.html">Company</a></li>
                   <li><a href="./OurSolution.html">Our Solutions</a></li>
                   <li><a href="./Projects.html">Projects</a></li>
