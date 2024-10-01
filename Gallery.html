@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow-x: hidden;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +15,10 @@
         body {
             font-family: Arial, sans-serif;
         }
+        .logo img{
+             width: 120px;
+             height: 40px;
+            }
     
         .top-bar {
             background-color: #3d4a95;
@@ -44,10 +48,9 @@
             margin: 0 15px;
         }
         .social-icons a img:hover{
-                background-color: #FF962D;
-                cursor: pointer;
-            }
-    
+                    background-color: #FF962D;
+                    cursor: pointer;
+                }
         .navbar {
             background-color: #f4f4f4;
             display: flex;
@@ -56,7 +59,6 @@
             justify-content: space-between;
             align-items: center;
             padding: 15px 100px;
-            overflow: hidden;
         }
     
         .logo {
@@ -118,338 +120,461 @@
             width: 20px;
             margin-right: 5px;
         }
+    
+    
+        @media (max-width: 578px) {
+            .nav-links {
+               top: 85px !important;
+            }
+        }
+    
+    
+    
+        @media (max-width: 1289px) {
+            .nav-links a {
+        padding: 10px 0;
+        margin-left: 0px;
+        font-size: 18px;
+        border: 1px solid #ebebeb;
+        width: 100%;
+    }
+            .logo img {
+                width: 190px;
+                height: 70px;
+                position: relative;
+                bottom: 0px;
+            }
+    
+            .top-bar {
+                padding: 10px 40px;
+                justify-content: center; 
+            }
+    
+            .navbar {
+                padding: 15px 50px;
+                width: 100%;
+            }
+    
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background-color: #f4f4f4;
+                position: absolute;
+                top: 114px;
+                right: 0;
+                width: 36%;
+                text-align: center;
+                opacity: 0;
+                transition: opacity 0.3s ease, visibility 0.3s ease;
+    
+            }
+    
+            .nav-links.active {
+                display: flex;
+                opacity: 1;
+                visibility: visible;
+                z-index: 1;
+                overflow: hidden;
+                margin-right: 20px;
+            }
+    
+            .mobile-menu-icon {
+                display: block;
+            }
+    
+            .social-media {
+                display: none; 
+            }
+            
+        }
+    
+        @media (max-width: 320px) {
+            .nav-links.active {
+                display: flex;
+                opacity: 1;
+                visibility: visible;
+                z-index: 1;
+                overflow: hidden;
+                margin-right: 20px;
+            }
+        }
+      
+       
+        @media (max-width: 766px) {
+            .nav-links {
+        top: 85px !important;
+    }
+            .top-bar {
+                display: none;
+            }
+        }
+    
+        @media (max-width: 330px) {
+            .navbar {
+                padding: 10px;
+                width: 100%;
+            }
+    
+            .logo img {
+                width: 70px;
+                height: 30px;
+                position: relative;
+                top: 3px;
+                left: 10px;
+            }
+    
+            .nav-links a {
+                padding: 12px 0;
+                font-size: 16px;
+            }
+    
+            .menu-icon {
+                font-size: 30px;
+            }
+        }
+    
         .container-footer{
-            display: flex;
-            flex-wrap: wrap; 
-            justify-content: space-between;
-            background-color: white;
-            padding: 0px;
-            width: 100%;
-        }
-        
-        .left-section, .right-section {
-            flex: 1 1 100%; 
-            padding: 20px;
-        }
-
-        .left-section {
-
-            text-align: center; 
-        }
-
-        .left-section img {
-            height: 60px;
-            width: 180px;
-            max-width: 100%; 
-        }
-
-        .left-section p {
-            font-size: 16px;
-            color: #666;
-            line-height: 1.6;
-            margin-top: 20px;
-        }
-       
-
-
-        .social-icons {
-            display: flex;
-            justify-content: flex-start; 
-            margin-top: 20px;
-            gap: 10px;
-        }
-
-        .social-icons a img {
-            width: 35px;
-            height: 35px;
-            background-color: #FBE9DA;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .social-icons a img :hover{
-            background-color: #FF962D;
-        }
-
-        .right-section {
-            background-color: #2D358A;
-            color: rgb(231, 226, 226);
-            clip-path: none;
-            text-align: center;
-            padding: 20px 10px;
-            height:60vh
-        }
-
-        .right-section .links {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            position: relative;
-            left:40px;
-            top: 100px;
-        }
-
-        .links ul {
-            list-style: none;
-            padding: 0;
-            margin: 20px 0;
-        }
-
-        .links ul li {
-            margin-bottom: 10px;
-            font-size: 16px;
-        }
-
-        .links ul li a {
-            text-decoration: none;
-            color: rgb(211, 205, 205);
-        }
-
-        .links ul li a:hover {
-            text-decoration: underline;
-        }
-
-       
-        @media (min-width: 768px) {
-            .container-footer {
-                flex-wrap: nowrap;
+                display: flex;
+                flex-wrap: wrap; 
+                justify-content: space-between;
+                background-color: white;
+                padding: 0px;
+                width: 100%;
             }
-
-            .left-section {
-                width: 40%;
-                text-align: left;
-                margin-top: 48px;
-            }
-
-            .right-section {
-                width: 60%;
-                clip-path: polygon(16% 0%, 100% 0%, 100% 100%, 0% 100%);
-                text-align: left;
+            
+            .left-section, .right-section {
+                flex: 1 1 100%; 
                 padding: 20px;
             }
-
-
-            .right-section .links {
-        flex-direction: row;
-        justify-content: space-evenly;
-        position: relative;
-        align-items: flex-start;
-        left: 30px;
-        top:10px;
-        max-width: 688px;
-    }
-            .links ul {
-                padding: 40px;
-            }
-        }
-
-        @media (max-width: 848px) {
+    
             .left-section {
-                width: 100%;
+    
+                text-align: center; 
             }
-
-            .right-section {
-                width: 100%;
+    
+            .left-section img {
+                height: 60px;
+                width: 180px;
+                max-width: 100%; 
             }
-
-            
-            }
-
-            .links ul {
-                padding: 10px; 
-            }
-        
-            
-        @media (max-width: 480px) {
+    
             .left-section p {
-                font-size: 14px;
+                font-size: 16px;
+                color: #666;
+                line-height: 1.6;
+                margin-top: 20px;
             }
-
+           
+    
+    
+            .social-icons {
+                display: flex;
+                justify-content: flex-start; 
+                margin-top: 20px;
+                gap: 10px;
+            }
+    
             .social-icons a img {
-                width: 30px;
-                height: 30px;
-            }
-
-            .right-section {
+                width: 35px;
+                height: 35px;
+                background-color: #FBE9DA;
                 padding: 10px;
+                border-radius: 5px;
             }
-
-            .links ul li {
-                font-size: 14px;
+            .social-icons a img :hover{
+                background-color: #FF962D;
             }
-
+    
+            .right-section {
+                background-color: #2D358A;
+                color: rgb(231, 226, 226);
+                clip-path: none;
+                text-align: center;
+                padding: 20px 10px;
+                height:60vh
+            }
+    
             .right-section .links {
-                position: relative;
-                left: -19px;
+                display: flex;
                 flex-direction: row;
-                top: 20px;
-    margin: 10px;
+                align-items: center;
+                position: relative;
+                left:40px;
+                top: 100px;
             }
-        }
-        
-@media (max-width: 768px) {
-    .newsletter-section {
-        height: auto;
-        padding: 20px;
-    }
-
-    .newsletter-title {
-        font-size: 18px;
-    }
-
-    .newsletter-heading {
-        font-size: 20px;
-        margin-bottom: 15px;
-    }
-
-    .subscription-form input {
-        width: 300px;
-        padding: 12px;
-        font-size: 14px;
-    }
-
-    .subscription-form button {
-        padding: 12px 20px;
-        width: 180px;
-        font-size: 14px;
-    }
-}
-
-
-@media (max-width: 640px) {
-    .newsletter-heading {
-        font-size: 20px;
-        margin-bottom: 10px;
-        line-height: 1.4;
-    }
-
-    .subscription-form {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .subscription-form input {
-        width: 100%;
-        max-width: 400px;
-        border-radius: 5px;
-        margin-bottom: 10px;
-    }
-
-    .subscription-form button {
-        width: 100%;
-        max-width: 200px;
-        border-radius: 5px;
-    }
-}
-
-
-@media (max-width: 480px) {
-    .newsletter-section {
-        padding: 15px;
-    }
-
-    .newsletter-heading {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-
-    .newsletter-title {
-        font-size: 16px;
-    }
-
-    .subscription-form input {
-        font-size: 14px;
-        padding: 10px;
-        max-width: 300px;
-    }
-
-    .subscription-form button {
-        font-size: 14px;
-        padding: 10px 20px;
-        max-width: 150px;
-    }
-}
-
-@media (max-width: 320px) {
-    .newsletter-heading {
-        font-size: 18px;
-    }
-
-    .subscription-form input {
-        font-size: 12px;
-        padding: 8px;
-        max-width: 260px;
-    }
-
-    .subscription-form button {
-        font-size: 12px;
-        padding: 8px 12px;
-        max-width: 120px;
-    }
-}
-        .newsletter-section {
+    
+            .links ul {
+                list-style: none;
+                padding: 0;
+                margin: 20px 0;
+            }
+    
+            .links ul li {
+                margin-bottom: 10px;
+                font-size: 16px;
+            }
+    
+            .links ul li a {
+                text-decoration: none;
+                color: rgb(211, 205, 205);
+            }
+    
+            .links ul li a:hover {
+                text-decoration: underline;
+            }
+    
+           
+ @media (min-width: 768px) {
+                .newsletter-section {
             height: auto;
-            width: 100%;
-            background-image: url('./image/bgframe.png') !important;
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+            padding: 20px;
         }
-
+    
         .newsletter-title {
-            margin-top: 20px;
-            color: rgba(255, 145, 0, 0.904);
-            font-size: 22px;
-            margin-bottom: 10px;
-            font-weight: bolder;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            font-size: 18px;
         }
-
+    
         .newsletter-heading {
-            color: #344b86;
-            font-size: 22px;
-            margin-bottom: 20px;
-            font-size: 50px;
-            font-weight: bolder;
+            font-size: 34px;
+          
         }
-
+    
+        .subscription-form input {
+            width: 300px;
+            padding: 12px;
+            font-size: 14px;
+        }
+    
+        .subscription-form button {
+            padding: 12px 20px;
+            width: 180px;
+            font-size: 14px;
+        }
+            .logo img {
+                width: 129px;
+                height: 44px;
+                position: relative;
+                bottom: 1px;
+                right: 25px;
+            }
+    
+            .nav-links a {
+                padding: 10px 0;
+                font-size: 18px;
+            }
+                .container-footer {
+                    flex-wrap: nowrap;
+                }
+    
+                .left-section {
+                    width: 40%;
+                    text-align: left;
+                    margin-top: 48px;
+                }
+    
+                .right-section {
+                    width: 60%;
+                    clip-path: polygon(16% 0%, 100% 0%, 100% 100%, 0% 100%);
+                    text-align: left;
+                    padding: 20px;
+                }
+    
+    
+                .right-section .links {
+            flex-direction: row;
+            justify-content: space-evenly;
+            position: relative;
+            align-items: flex-start;
+            left: 30px;
+            top:10px;
+            max-width: 688px;
+        }
+                .links ul {
+                    padding: 40px;
+                }
+            }
+    
+            @media (max-width: 848px) {
+                .left-section {
+                    width: 100%;
+                }
+    
+                .right-section {
+                    width: 100%;
+                }
+    
+                
+                }
+    
+                .links ul {
+                    padding: 10px; 
+                }
+            
+                
+            @media (max-width: 480px) {
+                .left-section p {
+                    font-size: 14px;
+                }
+    
+                .social-icons a img {
+                    width: 30px;
+                    height: 30px;
+                }
+    
+                .right-section {
+                    padding: 10px;
+                }
+    
+                .links ul li {
+                    font-size: 14px;
+                }
+    
+                .right-section .links {
+                    position: relative;
+                    left: -19px;
+                    flex-direction: row;
+                    top: 20px;
+        margin: 10px;
+                }
+            }
+            
+  
+    
+    @media (max-width: 640px) {
+        .newsletter-heading {
+            font-size: 20px;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+    
         .subscription-form {
-            display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
         }
-
+    
         .subscription-form input {
-            padding: 15px;
-            width: 450px;
-            border: none;
-            margin-bottom: 20px;
-            outline: none;
-            font-size: 16px;
-            border-radius: 5px 0 0 5px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            border-radius: 5px;
+            margin-bottom: 10px;
         }
-
+    
         .subscription-form button {
-            margin-bottom: 20px;
-            padding: 15px 30px;
-            background-color: rgba(255, 145, 0, 0.856);
-            color: white;
-            border: none;
+            width: 100%;
+            max-width: 200px;
+            border-radius: 5px;
+        }
+    }
+    
+    
+    @media (max-width: 480px) {
+        .newsletter-section {
+            padding: 15px;
+        }
+    
+        .newsletter-heading {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    
+        .newsletter-title {
             font-size: 16px;
-            cursor: pointer;
-            width:280px;
-            border-radius: 0 5px 5px 0;
-            transition: background-color 0.3s ease;
         }
-
-        .subscription-form button:hover {
-            background-color: #ff8500;
+    
+        .subscription-form input {
+            font-size: 14px;
+            padding: 10px;
+            max-width: 300px;
         }
+    
+        .subscription-form button {
+            font-size: 14px;
+            padding: 10px 20px;
+            max-width: 150px;
+        }
+    }
+    
+    @media (max-width: 320px) {
+        .newsletter-heading {
+            font-size: 18px;
+        }
+    
+        .subscription-form input {
+            font-size: 12px;
+            padding: 8px;
+            max-width: 260px;
+        }
+    
+        .subscription-form button {
+            font-size: 12px;
+            padding: 8px 12px;
+            max-width: 120px;
+        }
+    }
+            .newsletter-section {
+                height: auto;
+                width: 100%;
+                background-image: url('./image/bgframe.png') !important;
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+    
+            .newsletter-title {
+                margin-top: 20px;
+                color: rgba(255, 145, 0, 0.904);
+                font-size: 22px;
+                margin-bottom: 10px;
+                font-weight: bolder;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+    
+            .newsletter-heading {
+                color: #344b86;
+                font-size: 22px;
+                margin-bottom: 20px;
+                font-size: 50px;
+                font-weight: bolder;
+            }
+    
+            .subscription-form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+    
+            .subscription-form input {
+                padding: 15px;
+                width: 450px;
+                border: none;
+                margin-bottom: 20px;
+                outline: none;
+                font-size: 16px;
+                border-radius: 5px 0 0 5px;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            }
+    
+            .subscription-form button {
+                margin-bottom: 20px;
+                padding: 15px 30px;
+                background-color: rgba(255, 145, 0, 0.856);
+                color: white;
+                border: none;
+                font-size: 16px;
+                cursor: pointer;
+                width:280px;
+                border-radius: 0 5px 5px 0;
+                transition: background-color 0.3s ease;
+            }
+    
+            .subscription-form button:hover {
+                background-color: #ff8500;
+            }
     </style>
 </head>
 <body>

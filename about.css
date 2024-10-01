@@ -1607,6 +1607,7 @@ bottom: -5px; /* Space below the text */
 }
 
 @media (max-width: 320px) {
+    
     .mainheadingxxx h1 {
         font-size: 18px;
         width: 40%;
@@ -1771,7 +1772,7 @@ bottom: -5px; /* Space below the text */
         align-items: center;
         padding: 20px;
         box-sizing: border-box;
-        width: 717px;
+        /* width: 717px; */
     }
 
 
@@ -1917,6 +1918,7 @@ max-width: 150px;
 }
 
 @media (max-width: 320px) {
+    
 .newsletter-heading {
 font-size: 18px;
 }
@@ -2043,8 +2045,8 @@ max-width: 120px;
             width: 55%;
             left: 461px;
             padding: 40px;
-            background-color: rgba(0, 47, 108, 0.9);
-            height: 518px;
+            background-color: #2F378A;
+            height: 690px;
             z-index: 0;
         }
     }
@@ -2088,7 +2090,7 @@ max-width: 120px;
     .content-sectionyyy {
         width: 55%;
         left: 320px;
-        height: 487px;
+        height: 517px;
         z-index: 0;
     }
     .image-content img {
@@ -2162,7 +2164,7 @@ max-width: 120px;
     .content-sectionyyy {
         width: 100%;
         left: 0px;
-        height: 487px;
+        height: 517px;
         z-index: 0;
     }
     .reno-head {
@@ -2239,7 +2241,7 @@ max-width: 120px;
     .content-sectionyyy {
         width: 100%;
         left: 0px;
-        height: 487px;
+        height: 517px;
         z-index: 0;
     }
     .content-sectionyyy p{
@@ -2331,35 +2333,10 @@ max-width: 120px;
 
 }
 
-@media screen and (max-width: 320px) {
-    .our-story-section h1 {
-        font-size: 1.4rem;
-    }
 
-    .our-story-section h2 {
-        font-size: 0.95rem;
-    }
-
-    .our-story-section p {
-        font-size: 0.8rem;
-    }
-
-    .image-grid-section {
-        grid-template-columns: 1fr;
-        gap: 5px;
-    }
-
-    .grid-item h3 {
-        font-size: 30px;
-    }
-
-    .grid-item p {
-        font-size: 16px;
-        color: gray;
-    }
-}
 
 @media (max-width: 330px) {
+
 .img1 img {
     /* width: calc(100% + 140px); */
     /* height: calc(400px + 10px); */
@@ -2370,7 +2347,7 @@ max-width: 120px;
 .content-sectionyyy {
     width: 100%;
     left: 0px;
-    height: 487px;
+    height: 517px;
     z-index: 0;
 }
 .content-sectionyyy p{
