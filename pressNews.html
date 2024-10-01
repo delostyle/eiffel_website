@@ -259,19 +259,10 @@
 
             text-align: center; 
         }
-
         .left-section img {
-            height: 60px;
-            width: 180px;
-            max-width: 100%; 
-        }
-
-        .left-section p {
-            font-size: 16px;
-            color: #666;
-            line-height: 1.6;
-            margin-top: 20px;
-        }
+    height: 45px;
+    width: 130px;
+}
        
 
 
@@ -385,6 +376,9 @@
         @media (max-width: 480px) {
             .left-section p {
                 font-size: 14px;
+                text-align: left;
+                color: #666;
+                margin-top: 10px;
             }
 
             .social-icons a img {
@@ -407,6 +401,71 @@
                 top: 20px;
     margin: 10px;
             }
+        }
+
+        .newsletter-section {
+            height: auto;
+            width: 100%;
+            background-image: url('./image/bgframe.png') !important;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .newsletter-title {
+            margin-top: 20px;
+            color: rgba(255, 145, 0, 0.904);
+            font-size: 22px;
+            margin-bottom: 10px;
+            font-weight: bolder;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .newsletter-heading {
+            color: #344b86;
+            font-size: 22px;
+            margin-bottom: 20px;
+            font-size: 50px;
+            font-weight: bolder;
+        }
+
+        .subscription-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .subscription-form input {
+            padding: 15px;
+            width: 450px;
+            border: none;
+            margin-bottom: 20px;
+            outline: none;
+            font-size: 16px;
+            border-radius: 5px 0 0 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .subscription-form button {
+            margin-bottom: 20px;
+            padding: 15px 30px;
+            background-color: rgba(255, 145, 0, 0.856);
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            width:280px;
+            border-radius: 0 5px 5px 0;
+            transition: background-color 0.3s ease;
+        }
+
+        .subscription-form button:hover {
+            background-color: #ff8500;
         }
         
 @media (max-width: 768px) {
@@ -509,70 +568,7 @@
         max-width: 120px;
     }
 }
-        .newsletter-section {
-            height: auto;
-            width: 100%;
-            background-image: url('./image/bgframe.png') !important;
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        .newsletter-title {
-            margin-top: 20px;
-            color: rgba(255, 145, 0, 0.904);
-            font-size: 22px;
-            margin-bottom: 10px;
-            font-weight: bolder;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .newsletter-heading {
-            color: #344b86;
-            font-size: 22px;
-            margin-bottom: 20px;
-            font-size: 50px;
-            font-weight: bolder;
-        }
-
-        .subscription-form {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .subscription-form input {
-            padding: 15px;
-            width: 450px;
-            border: none;
-            margin-bottom: 20px;
-            outline: none;
-            font-size: 16px;
-            border-radius: 5px 0 0 5px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .subscription-form button {
-            margin-bottom: 20px;
-            padding: 15px 30px;
-            background-color: rgba(255, 145, 0, 0.856);
-            color: white;
-            border: none;
-            font-size: 16px;
-            cursor: pointer;
-            width:280px;
-            border-radius: 0 5px 5px 0;
-            transition: background-color 0.3s ease;
-        }
-
-        .subscription-form button:hover {
-            background-color: #ff8500;
-        }
+      
     </style>
 </head>
 <body>
