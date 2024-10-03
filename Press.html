@@ -718,8 +718,8 @@
              Here’s a look at some of our most recent news and press mentions.</p>
         </div>
         </section>
-  <!-- First Section: Breaking Ground and Making Headlines -->
-  <section class="headline-section">
+
+<section class="headline-section">
     <div class="sec-class">
         <h5 class="category">Educational Facility Engineering</h5>
         <h2>Breaking Ground and Making Headlines</h2>
@@ -739,7 +739,7 @@
                 <a href="./pressNews.html">
                     <p>Eiffel Industries Takes the Lead in Phoenix's Growing Commercial Construction Sector</p>
                 </a>
-                    <div class="calendar">
+                <div class="calendar">
                     <img src="./image/uil_calender.png" alt="calendar icon" />
                     <h6 class="article-meta">27 August, 2024</h6>
                 </div>
@@ -778,9 +778,7 @@
 </section>
 
 
-
-  <!-- Second Section: Latest Announcements -->
-  <section class="announcement-section">
+<section class="announcement-section">
     <div class="sec-class">
         <h5 class="category">Press Release</h5>
         <h2>Latest Announcements from Eiffel Industries</h2>
@@ -929,59 +927,41 @@
             navLinks.classList.toggle('active');
         });
     
-  function seeAll() {
-        const hiddenCards = document.querySelectorAll('.news-card.hidden'); // Select hidden cards
-        const visibleCards = document.querySelectorAll('.news-card:not(.hidden)'); // Select visible cards
-        const button = document.querySelector('.see-btn');
+// Function for the first section "Breaking Ground"
+function seeAll() {
+    const hiddenCards = document.querySelectorAll('.headline-section .news-card.hidden'); // Select hidden cards in first section
+    const button = document.querySelector('.headline-section .see-more-btn'); // Correct button selector
 
-        // Toggle button text and card visibility
-        if (button.innerText === 'See All') {
-            hiddenCards.forEach(card => {
-                card.classList.remove('hidden'); // Show hidden cards
-            });
-            button.innerText = 'See Less'; // Change button text
-        } else {
-            // If "See Less" is clicked, hide only the currently shown hidden cards
-            visibleCards.forEach(card => {
-                if (card.classList.contains('hidden')) {
-                    card.classList.remove('hidden'); // Show hidden cards
-                }
-            });
-
-            // Hide the last N cards that are visible
-            const cardsToHide = visibleCards.length - 3; // Number of cards to show initially (3)
-            for (let i = 0; i < cardsToHide; i++) {
-                visibleCards[i + 3].classList.add('hidden'); // Hide excess cards
-            }
-            button.innerText = 'See All'; // Reset button text
-        }
-    }
-
-function seeMore() {
-    const hiddenCards = document.querySelectorAll('.announcement-section .news-card2.hidden'); // Select hidden cards
-    const visibleCards = document.querySelectorAll('.announcement-section .news-card2:not(.hidden)'); // Select visible cards
-    const button = document.querySelector('.announcement-section .see-btn');
-
-    // Toggle button text and card visibility
+    // Toggle visibility
     if (button.innerText === 'See All') {
-        hiddenCards.forEach(card => {
-            card.classList.remove('hidden'); // Show hidden cards
-        });
+        hiddenCards.forEach(card => card.classList.remove('hidden')); // Show hidden cards
         button.innerText = 'See Less'; // Change button text
     } else {
-        // If "See Less" is clicked, hide only the currently shown hidden cards
-        const cardsToShow = 3; // Number of cards to show initially
-        const totalVisibleCards = visibleCards.length; // Total number of visible cards
-        
-        // Hide excess cards
-        for (let i = cardsToShow; i < totalVisibleCards; i++) {
-            visibleCards[i].classList.add('hidden'); // Hide excess visible cards
-        }
-        
+        const visibleCards = document.querySelectorAll('.headline-section .news-card'); // Get all visible cards
+        visibleCards.forEach((card, index) => {
+            if (index >= 3) card.classList.add('hidden'); // Hide cards after the first 3
+        });
         button.innerText = 'See All'; // Reset button text
     }
 }
 
+// Function for the second section "Latest Announcements"
+function seeMore() {
+    const hiddenCards = document.querySelectorAll('.announcement-section .news-card2.hidden'); // Select hidden cards in second section
+    const button = document.querySelector('.announcement-section .see-btn'); // Correct button selector
+
+    // Toggle visibility
+    if (button.innerText === 'See More') {
+        hiddenCards.forEach(card => card.classList.remove('hidden')); // Show hidden cards
+        button.innerText = 'See Less'; // Change button text
+    } else {
+        const visibleCards = document.querySelectorAll('.announcement-section .news-card2'); // Get all visible cards
+        visibleCards.forEach((card, index) => {
+            if (index >= 3) card.classList.add('hidden'); // Hide cards after the first 3
+        });
+        button.innerText = 'See More'; // Reset button text
+    }
+}
 
 
 
