@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,22 +12,22 @@
             padding: 0;
             box-sizing: border-box;
         }
-    
+
         body {
             font-family: Arial, sans-serif;
         }
-    
+
         .top-bar {
             background-color: #3d4a95;
             color: white;
             display: flex;
-            gap:30px;
+            gap: 30px;
             justify-content: space-between;
             align-items: center;
             height: 30px;
-            padding: 10px 70px; 
+            padding: 10px 70px;
         }
-    
+
         .social-media {
             display: flex;
             justify-content: center;
@@ -37,13 +38,13 @@
             position: relative;
             right: 20px;
         }
-    
+
         .social-media a {
             color: white;
             font-size: 24px;
             margin: 0 15px;
         }
-    
+
         .navbar {
             background-color: #f4f4f4;
             display: flex;
@@ -53,23 +54,23 @@
             align-items: center;
             padding: 15px 100px;
         }
-    
+
         .logo {
             display: flex;
             align-items: center;
         }
-    
+
         .logo img {
             width: 120px;
             height: 40px;
         }
-    
+
         .nav-links {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-    
+
         .nav-links a {
             color: #333;
             text-decoration: none;
@@ -78,76 +79,77 @@
             margin-left: 60px;
             font-weight: bold;
         }
-    
+
         .nav-links a:last-child {
             margin-right: 0;
         }
-    
+
         .nav-links a:hover {
             color: orange;
         }
-    
+
         .mobile-menu-icon {
             display: none;
             cursor: pointer;
         }
-    
+
         .menu-icon {
             font-size: 24px;
         }
-    
+
         .contact-info {
             display: flex;
             align-items: center;
         }
-    
+
         .contact-info span {
-            margin-right: 20px; 
+            margin-right: 20px;
             display: flex;
             align-items: center;
-            padding:0px 30px
+            padding: 0px 30px
         }
-    
+
         .contact-info img {
             height: 20px;
             width: 20px;
             margin-right: 5px;
         }
-    
-    
+
+
         @media (max-width: 578px) {
             .nav-links {
-               top: 85px !important;
+                top: 85px !important;
             }
         }
-    
-    
-    
+
+
+
         @media (max-width: 1289px) {
             .nav-links a {
-        padding: 10px 0;
-        margin-left: 0px;
-        font-size: 18px;
-        border: 1px solid #ebebeb;
-        width: 100%;
-    }
+                padding: 10px 0;
+                margin-left: 0px;
+                font-size: 18px;
+                border: 1px solid #ebebeb;
+                width: 100%;
+            }
+
             .logo img {
                 width: 190px;
                 height: 70px;
                 position: relative;
                 bottom: 0px;
             }
-    
+
             .top-bar {
                 padding: 10px 40px;
-                justify-content: center; 
+                justify-content: center;
             }
-    
+
             .navbar {
                 padding: 15px 50px;
                 width: 100%;
             }
-    
+
             .nav-links {
                 display: none;
                 flex-direction: column;
@@ -159,9 +161,9 @@
                 text-align: center;
                 opacity: 0;
                 transition: opacity 0.3s ease, visibility 0.3s ease;
-    
+
             }
-    
+
             .nav-links.active {
                 display: flex;
                 opacity: 1;
@@ -170,17 +172,17 @@
                 overflow: hidden;
                 margin-right: 20px;
             }
-    
+
             .mobile-menu-icon {
                 display: block;
             }
-    
+
             .social-media {
-                display: none; 
+                display: none;
             }
-            
+
         }
-    
+
         @media (max-width: 320px) {
             .nav-links.active {
                 display: flex;
@@ -191,6 +193,7 @@
                 margin-right: 20px;
             }
         }
+
         @media (max-width: 768px) {
             .logo img {
                 width: 129px;
@@ -199,29 +202,30 @@
                 bottom: 1px;
                 right: 25px;
             }
-    
+
             .nav-links a {
                 padding: 10px 0;
                 font-size: 18px;
             }
         }
-    
-       
+
+
         @media (max-width: 766px) {
             .nav-links {
-        top: 85px !important;
-    }
+                top: 85px !important;
+            }
+
             .top-bar {
                 display: none;
             }
         }
-    
+
         @media (max-width: 330px) {
             .navbar {
                 padding: 10px;
                 width: 100%;
             }
-    
+
             .logo img {
                 width: 70px;
                 height: 30px;
@@ -229,40 +233,41 @@
                 top: 3px;
                 left: 10px;
             }
-    
+
             .nav-links a {
                 padding: 12px 0;
                 font-size: 16px;
             }
-    
+
             .menu-icon {
                 font-size: 30px;
             }
         }
-    
-        .container-footer{
+
+        .container-footer {
             display: flex;
-            flex-wrap: wrap; 
+            flex-wrap: wrap;
             justify-content: space-between;
             background-color: white;
             padding: 0px;
             width: 100%;
         }
-        
-        .left-section, .right-section {
-            flex: 1 1 100%; 
-            padding: 20px;
+
+        .left-section,
+        .right-section {
+            flex: 1 1 100%;
+            padding: 104px;
         }
 
         .left-section {
 
-            text-align: center; 
+            text-align: center;
         }
 
         .left-section img {
-    height: 45px;
-    width: 130px;
-}
+            height: 45px;
+            width: 130px;
+        }
 
         .left-section p {
             font-size: 16px;
@@ -270,35 +275,36 @@
             line-height: 1.6;
             margin-top: 20px;
         }
-       
+
 
 
         .social-icons {
             display: flex;
-            justify-content: flex-start; 
+            justify-content: flex-start;
             margin-top: 20px;
             gap: 10px;
         }
 
         .social-icons a img {
-            width: 35px;
-            height: 35px;
-            background-color: #FBE9DA;
+            width: 50px;
+            height: 50px;
+            /* background-color:#90785e; */
             padding: 10px;
             border-radius: 5px;
         }
-        .social-icons a img:hover{
-                background-color: #FF962D;
-                cursor: pointer;
-            }
+
+        .social-icons a img:hover {
+            background-color: #FF962D;
+            cursor: pointer;
+        }
 
         .right-section {
-            background-color: #2D358A;
+            background-color: #2F378A;
             color: rgb(231, 226, 226);
             clip-path: none;
             text-align: center;
             padding: 20px 10px;
-            height:60vh
+            height: 70vh
         }
 
         .right-section .links {
@@ -306,7 +312,7 @@
             flex-direction: row;
             align-items: center;
             position: relative;
-            left:40px;
+            left: 40px;
             top: 100px;
         }
 
@@ -330,7 +336,7 @@
             text-decoration: underline;
         }
 
-       
+
         @media (min-width: 768px) {
             .container-footer {
                 flex-wrap: nowrap;
@@ -346,19 +352,21 @@
                 width: 60%;
                 clip-path: polygon(16% 0%, 100% 0%, 100% 100%, 0% 100%);
                 text-align: left;
-                padding: 20px;
+                padding: 100px;
+             
             }
 
 
             .right-section .links {
-        flex-direction: row;
-        justify-content: space-evenly;
-        position: relative;
-        align-items: flex-start;
-        left: 30px;
-        top:10px;
-        max-width: 688px;
-    }
+                flex-direction: row;
+                justify-content: space-evenly;
+                position: relative;
+                align-items: flex-start;
+                left: 30px;
+                top: 10px;
+                max-width: 688px;
+            }
+
             .links ul {
                 padding: 40px;
             }
@@ -373,14 +381,14 @@
                 width: 100%;
             }
 
-            
-            }
 
-            .links ul {
-                padding: 10px; 
-            }
-        
-            
+        }
+
+        .links ul {
+            padding: 10px;
+        }
+
+
         @media (max-width: 480px) {
             .left-section p {
                 font-size: 14px;
@@ -404,7 +412,7 @@
                 left: -19px;
                 flex-direction: row;
                 top: 20px;
-    margin: 10px;
+                margin: 10px;
             }
         }
 
@@ -419,30 +427,35 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            
+        
         }
 
         .newsletter-title {
-            margin-top: 20px;
+            margin-top: 100px;
             color: rgba(255, 145, 0, 0.904);
             font-size: 22px;
             margin-bottom: 10px;
             font-weight: bolder;
             text-transform: uppercase;
             letter-spacing: 1px;
+           
         }
 
         .newsletter-heading {
             color: #344b86;
-            font-size: 22px;
+            /* font-size: 22px; */
             margin-bottom: 20px;
-            font-size: 50px;
+            font-size: 48px;
             font-weight: bolder;
+            font-family:open 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         .subscription-form {
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-bottom: 100px;
         }
 
         .subscription-form input {
@@ -464,7 +477,7 @@
             border: none;
             font-size: 16px;
             cursor: pointer;
-            width:280px;
+            width: 280px;
             border-radius: 0 5px 5px 0;
             transition: background-color 0.3s ease;
         }
@@ -472,110 +485,110 @@
         .subscription-form button:hover {
             background-color: #ff8500;
         }
-        
-@media (max-width: 768px) {
-    .newsletter-section {
-        height: auto;
-        padding: 20px;
-    }
 
-    .newsletter-title {
-        font-size: 18px;
-    }
+        @media (max-width: 768px) {
+            .newsletter-section {
+                height: auto;
+                padding: 20px;
+            }
 
-    .newsletter-heading {
-        font-size: 20px;
-        margin-bottom: 15px;
-    }
+            .newsletter-title {
+                font-size: 18px;
+            }
 
-    .subscription-form input {
-        width: 300px;
-        padding: 12px;
-        font-size: 14px;
-    }
+            .newsletter-heading {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
 
-    .subscription-form button {
-        padding: 12px 20px;
-        width: 180px;
-        font-size: 14px;
-    }
-}
+            .subscription-form input {
+                width: 300px;
+                padding: 12px;
+                font-size: 14px;
+            }
 
-
-@media (max-width: 640px) {
-    .newsletter-heading {
-        font-size: 20px;
-        margin-bottom: 10px;
-        line-height: 1.4;
-    }
-
-    .subscription-form {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .subscription-form input {
-        width: 100%;
-        max-width: 400px;
-        border-radius: 5px;
-        margin-bottom: 10px;
-    }
-
-    .subscription-form button {
-        width: 100%;
-        max-width: 200px;
-        border-radius: 5px;
-    }
-}
+            .subscription-form button {
+                padding: 12px 20px;
+                width: 180px;
+                font-size: 14px;
+            }
+        }
 
 
-@media (max-width: 480px) {
-    .newsletter-section {
-        padding: 15px;
-    }
+        @media (max-width: 640px) {
+            .newsletter-heading {
+                font-size: 20px;
+                margin-bottom: 10px;
+                line-height: 1.4;
+            }
 
-    .newsletter-heading {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
+            .subscription-form {
+                flex-direction: column;
+                align-items: center;
+            }
 
-    .newsletter-title {
-        font-size: 16px;
-    }
+            .subscription-form input {
+                width: 100%;
+                max-width: 400px;
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
 
-    .subscription-form input {
-        font-size: 14px;
-        padding: 10px;
-        max-width: 300px;
-    }
+            .subscription-form button {
+                width: 100%;
+                max-width: 200px;
+                border-radius: 5px;
+            }
+        }
 
-    .subscription-form button {
-        font-size: 14px;
-        padding: 10px 20px;
-        max-width: 150px;
-    }
-}
 
-@media (max-width: 320px) {
-    .newsletter-heading {
-        font-size: 18px;
-    }
+        @media (max-width: 480px) {
+            .newsletter-section {
+                padding: 15px;
+            }
 
-    .subscription-form input {
-        font-size: 12px;
-        padding: 8px;
-        max-width: 260px;
-    }
+            .newsletter-heading {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
 
-    .subscription-form button {
-        font-size: 12px;
-        padding: 8px 12px;
-        max-width: 120px;
-    }
-}
-      
+            .newsletter-title {
+                font-size: 16px;
+            }
+
+            .subscription-form input {
+                font-size: 14px;
+                padding: 10px;
+                max-width: 300px;
+            }
+
+            .subscription-form button {
+                font-size: 14px;
+                padding: 10px 20px;
+                max-width: 150px;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .newsletter-heading {
+                font-size: 18px;
+            }
+
+            .subscription-form input {
+                font-size: 12px;
+                padding: 8px;
+                max-width: 260px;
+            }
+
+            .subscription-form button {
+                font-size: 12px;
+                padding: 8px 12px;
+                max-width: 120px;
+            }
+        }
     </style>
 </head>
+
 <body>
     <header>
 
@@ -593,20 +606,29 @@
                 <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
-    
+
         <!-- Navbar -->
         <nav class="navbar">
             <div class="logo">
-                <a href="./Home.html"><img src="./image/logo.png" alt="Logo"></a> 
-             </div>
+                <a href="./Home.html"><img src="./image/logo.png" alt="Logo"></a>
+            </div>
             <div class="nav-links">
                 <!-- <a href="./Home.html">Home</a> -->
-                <a href="./About.html">About</a>
+
+                <!-- <a href="./About.html">About</a>
                 <a href="./Gallery.html">Gallery</a>
                 <a href="./OurSolution.html">Our Solutions</a>
                 <a href="./Projects.html">Project</a>
                 <a href="./Press.html">Press</a>
-                <a href="./Contact.html">Contact</a>
+                <a href="./Contact.html">Contact</a> -->
+
+                <a href="./Home.html">HOME</a>
+                <a href="./About.html">COMPANY</a>
+                <a href="./OurSolution.html">OUR SOLUTIONS</a>
+                <a href="./Projects.html">PROJECT</a>
+                <a href="./Press.html">PRESS</a>
+                <a href="./Contact.html">CONTACT</a>
+
             </div>
             <div class="mobile-menu-icon">
                 <span class="menu-icon">&#9776;</span>
@@ -614,121 +636,140 @@
         </nav>
     </header>
     <div class="contact-section">
-        <h1 class="contact">Contact</h1>
+        <h1 class="contact">CONTACT</h1>
         <h2 class="contact-title">Get in Touch with Eiffel Industries: Let's Build Together</h2>
 
         <div class="contact-container">
             <div class="contact-it">
-                
+
                 <div class="info-item">
                     <img src="./image/mail.png" alt="Email Icon">
                     <div class="info-text">
-                    <p class="label">Email</p>
-                    <p class="details">info@eiffelindustries.com</p>
-                </div>
+                        <p class="label">Email</p>
+                        <p class="details">info@eiffelindustries.com</p>
+                    </div>
                 </div>
                 <div class="info-item">
                     <img src="./image/phone.png" alt="Phone Icon">
                     <div class="info-text">
-                    <p class="label">Phone</p>
-                    <p class="details">+919988776655</p>
-                </div>
+                        <p class="label">Phone</p>
+                        <p class="details">+919988776655</p>
+                    </div>
                 </div>
                 <div class="info-item">
-                 
+
                     <img src="./image/tele.png" alt="Landline Icon">
                     <div class="info-text">
-                    <p class="label">Landline</p>
-                    <p class="details">+10339988776655</p>
+                        <p class="label">Landline</p>
+                        <p class="details">+10339988776655</p>
+                    </div>
                 </div>
-                </div>
-               
-               
+
+
                 <div class="info-item">
                     <img src="./image/loca.png" alt="Location Icon">
                     <div class="info-text">
-                    <p class="label">Address</p>
-                    <p class="details">1234 Innovation Drive, Suite 500<br>Scottsdale, AZ 85260, USA</p>
+                        <p class="label">Address</p>
+                        <p class="details">1234 Innovation Drive, Suite 500<br>Scottsdale, AZ 85260, USA</p>
+                    </div>
                 </div>
-            </div>
             </div>
 
             <div class="contact-form">
                 <input type="text" placeholder="Name" class="input-field">
                 <div class="con-flex">
-                <input type="email" placeholder="Email" class="input-field">
-                <input type="text" placeholder="Phone" class="input-field">
-            </div>
+                    <input type="email" placeholder="Email" class="input-field">
+                    <input type="text" placeholder="Phone" class="input-field">
+                </div>
                 <textarea placeholder="Message" class="message-field"></textarea>
                 <button type="submit" class="submit-btn">SEND MESSAGE</button>
             </div>
         </div>
     </div>
+
     <section>
         <div class="newsletter-section">
-          <div class="newsletter-title">Newsletter</div>
-          <div class="newsletter-heading">Subscribe To Our Newsletter To Stay Updated With <br/> Our Latest Construction News and Trends</div>
-          <div class="subscription-form">
-              <input type="email" placeholder="Enter your email" required>
-              <button type="submit">Subscribe</button>
-          </div>
-      </div>
-      </section>
-      <section>
+            <div class="newsletter-title">Newsletter</div>
+            <div class="newsletter-heading">Subscribe To Our Newsletter To Stay Updated With <br /> Our Latest
+                Construction News and Trends</div>
+            <div class="subscription-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">
+                    SUBSCRIBE
+                </button>
+            </div>
+        </div>
+    </section>
+
+    
+    <section>
         <div class="container-footer">
-          <!-- Left Section -->
-          <div class="left-section">
-              <a href="./Home.html"><img src="./image//logo.png" alt="Eiffel Logo" class="logo"></a> 
-              <p>Lorem ipsuLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis telluLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.</p>
-              <div class="social-icons">
-                  <a href="#"><img src="./image/fb.png" alt="Facebook"></a>
-                  <a href="#"><img src="./image/ins.png" alt="Instagram"></a>
-                  <a href="#"><img src="./image/lnk.png" alt="LinkedIn"></a>
-                  <a href="#"><img src="./image/x.png" alt="X"></a>
-                  <a href="#"><img src="./image/yt.png" alt="YouTube"></a>
-              </div>
-          </div>
-  
-          <!-- Right Section -->
-          <div class="right-section">
-              <div class="links">
-                  <ul>
-                      <li><strong>Explore</strong></li>
-                      <li><a href="./Home.html">Home</a></li>
-                      <li><a href="./About.html">About</a></li>
-                      <li><a href="./Gallery.html">Company</a></li>
-                      <li><a href="./OurSolution.html">Our Solutions</a></li>
-                      <li><a href="./Projects.html">Projects</a></li>
-                      <li><a href="./pressNews.html">Press</a></li>
-                      <li><a href="./Contact.html">Contact</a></li>
-                  </ul>
-                  <ul>
-                      <li><strong>Projects</strong></li>
-                      <li><a href="#">New Constructions</a></li>
-                      <li><a href="#">Reconstructions</a></li>
-                      <li><a href="#">Restorations</a></li>
-                      <li><a href="#">Capital Repair</a></li>
-                      <li><a href="#">Re-equipment</a></li>
-                      <li><a href="#">Individual Planning</a></li>
-                  </ul>
-                  <ul>
-                      <li><strong>Policy</strong></li>
-                      <li><a href="#">Privacy</a></li>
-                      <li><a href="#">Security</a></li>
-                      <li><a href="#">Terms & Conditions</a></li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-      </section>
-      <script>
-            // Toggle mobile menu
-            const mobileMenuIcon = document.querySelector('.menu-icon');
+            <!-- Left Section -->
+            <div class="left-section">
+                <a href="./Home.html"><img src="./image//logo.png" alt="Eiffel Logo" class="logo"></a>
+                <p>Lorem ipsuLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum
+                    est a, mattis telluLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                    molestie, dictum est a, mattis tellum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                    molestie, dictum est a, mattis tellus.</p>
+                <div class="social-icons">
+                    <a href="#"><img src="./image/fbanC.png" alt="Facebook"></a>
+                    <a href="#"><img src="./image/inana.png" alt="Instagram"></a>
+                    <a href="#"><img src="./image/indana.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="./image/tana.png" alt="X"></a>
+                    <a href="#"><img src="./image/ytana.png" alt="YouTube"></a>
+                </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="right-section">
+                <div class="links">
+                    <ul>
+                        <li><strong>Explore</strong></li>
+                        <li><a href="./Home.html">Home</a></li>
+                        <li><a href="./About.html">About</a></li>
+                        <li><a href="./Gallery.html">Company</a></li>
+                        <li><a href="./OurSolution.html">Our Solutions</a></li>
+                        <li><a href="./Projects.html">Projects</a></li>
+                        <li><a href="./pressNews.html">Press</a></li>
+                        <li><a href="./Contact.html">Contact</a></li>
+                    </ul>
+                    <ul>
+                        <li><strong>Projects</strong></li>
+                        <li><a href="#">New Constructions</a></li>
+                        <li><a href="#">Reconstructions</a></li>
+                        <li><a href="#">Restorations</a></li>
+                        <li><a href="#">Capital Repair</a></li>
+                        <li><a href="#">Re-equipment</a></li>
+                        <li><a href="#">Individual Planning</a></li>
+                    </ul>
+                    <ul>
+                        <li><strong>Policy</strong></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="copy_right">
+
+           <h6 class="copy_right_text">© Eiffel Industries 2024. All Rights Reserved</h6>
+        </div>
+    </section>
+
+    <script>
+        // Toggle mobile menu
+        const mobileMenuIcon = document.querySelector('.menu-icon');
         const navLinks = document.querySelector('.nav-links');
-        
+
         mobileMenuIcon.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         });
-      </script>
+    </script>
 </body>
+
 </html>
