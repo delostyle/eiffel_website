@@ -77,6 +77,22 @@ body {
   max-width: 1400px;
 }
 
+.copy_right {
+  height: 76px;
+  background-color: #F4F4F4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.copy_right_text {
+  text-align: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
 .project-card {
   background-color: white;
   display: flex;
@@ -351,4 +367,8 @@ body {
   .project-info ul li.details {
     -webkit-line-clamp: 3;
   }
+
+
+
+  
 }

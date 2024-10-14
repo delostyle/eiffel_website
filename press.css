@@ -58,6 +58,24 @@
     color: #FFFFFF;
     margin-top: 20px;
   }
+
+
+  .copy_right {
+    height: 76px;
+    background-color: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.copy_right_text {
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
   
   /* Headline & Announcement Section */
   .headline-section,

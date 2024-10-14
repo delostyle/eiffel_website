@@ -1,279 +1,288 @@
 <!DOCTYPE html>
 <html lang="en" style="overflow-x: hidden;">
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-  <meta charset="UTF-8">
-  
-  <title>Construction Engineering</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
 
-    body {
-        font-family: Arial, sans-serif;
-    }
-    .logo img{
-         width: 120px;
-         height: 40px;
+    <title>Construction Engineering</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-    .top-bar {
-        background-color: #3d4a95;
-        color: white;
-        display: flex;
-        gap:30px;
-        justify-content: space-between;
-        align-items: center;
-        height: 30px;
-        padding: 10px 70px; 
-    }
-
-    .social-media {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #3d4a95;
-        padding: 10px;
-        height: 20px;
-        position: relative;
-        right: 20px;
-    }
-
-    .social-media a {
-        color: white;
-        font-size: 24px;
-        margin: 0 15px;
-    }
-    .social-icons a img:hover{
-                background-color: #FF962D;
-                cursor: pointer;
-            }
-    .navbar {
-        background-color: #f4f4f4;
-        display: flex;
-        width: 100%;
-        height: 85px;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px 100px;
-    }
-
-    .logo {
-        display: flex;
-        align-items: center;
-    }
-
-    .logo img {
-        width: 120px;
-        height: 40px;
-    }
-
-    .nav-links {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .nav-links a {
-        color: #333;
-        text-decoration: none;
-        margin-right: 4px;
-        padding: 0px 15px;
-        margin-left: 60px;
-        font-weight: bold;
-    }
-
-    .nav-links a:last-child {
-        margin-right: 0;
-    }
-
-    .nav-links a:hover {
-        color: orange;
-    }
-
-    .mobile-menu-icon {
-        display: none;
-        cursor: pointer;
-    }
-
-    .menu-icon {
-        font-size: 24px;
-    }
-
-    .contact-info {
-        display: flex;
-        align-items: center;
-    }
-
-    .contact-info span {
-        margin-right: 20px; 
-        display: flex;
-        align-items: center;
-        padding:0px 30px
-    }
-
-    .contact-info img {
-        height: 20px;
-        width: 20px;
-        margin-right: 5px;
-    }
-
-
-    @media (max-width: 578px) {
-        .nav-links {
-           top: 85px !important;
+        body {
+            font-family: Arial, sans-serif;
         }
-    }
 
-
-
-    @media (max-width: 1289px) {
-        .nav-links a {
-    padding: 10px 0;
-    margin-left: 0px;
-    font-size: 18px;
-    border: 1px solid #ebebeb;
-    width: 100%;
-}
         .logo img {
-            width: 190px;
-            height: 70px;
-            position: relative;
-            bottom: 0px;
+            width: 120px;
+            height: 40px;
         }
 
         .top-bar {
-            padding: 10px 40px;
-            justify-content: center; 
-        }
-
-        .navbar {
-            padding: 15px 50px;
-            width: 100%;
-        }
-
-        .nav-links {
-            display: none;
-            flex-direction: column;
-            background-color: #f4f4f4;
-            position: absolute;
-            top: 114px;
-            right: 0;
-            width: 36%;
-            text-align: center;
-            opacity: 0;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-
-        }
-
-        .nav-links.active {
+            background-color: #3d4a95;
+            color: white;
             display: flex;
-            opacity: 1;
-            visibility: visible;
-            z-index: 1;
-            overflow: hidden;
-            margin-right: 20px;
-        }
-
-        .mobile-menu-icon {
-            display: block;
+            gap: 30px;
+            justify-content: space-between;
+            align-items: center;
+            height: 30px;
+            padding: 10px 70px;
         }
 
         .social-media {
-            display: none; 
-        }
-        
-    }
-
-    @media (max-width: 320px) {
-        .nav-links.active {
             display: flex;
-            opacity: 1;
-            visibility: visible;
-            z-index: 1;
-            overflow: hidden;
-            margin-right: 20px;
-        }
-    }
-    @media (max-width: 768px) {
-        .logo img {
-            width: 129px;
-            height: 44px;
-            position: relative;
-            bottom: 1px;
-            right: 25px;
-        }
-
-        .nav-links a {
-            padding: 10px 0;
-            font-size: 18px;
-        }
-    }
-
-   
-    @media (max-width: 766px) {
-        .nav-links {
-    top: 85px !important;
-}
-        .top-bar {
-            display: none;
-        }
-    }
-
-    @media (max-width: 330px) {
-        .navbar {
+            justify-content: center;
+            align-items: center;
+            background-color: #3d4a95;
             padding: 10px;
+            height: 20px;
+            position: relative;
+            right: 20px;
+        }
+
+        .social-media a {
+            color: white;
+            font-size: 24px;
+            margin: 0 15px;
+        }
+
+        .social-icons a img:hover {
+            background-color: #FF962D;
+            cursor: pointer;
+        }
+
+        .navbar {
+            background-color: #f4f4f4;
+            display: flex;
             width: 100%;
+            height: 85px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 100px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
         }
 
         .logo img {
-            width: 70px;
-            height: 30px;
-            position: relative;
-            top: 3px;
-            left: 10px;
+            width: 120px;
+            height: 40px;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .nav-links a {
-            padding: 12px 0;
-            font-size: 16px;
+            color: #333;
+            text-decoration: none;
+            margin-right: 4px;
+            padding: 0px 15px;
+            margin-left: 60px;
+            font-weight: bold;
+        }
+
+        .nav-links a:last-child {
+            margin-right: 0;
+        }
+
+        .nav-links a:hover {
+            color: orange;
+        }
+
+        .mobile-menu-icon {
+            display: none;
+            cursor: pointer;
         }
 
         .menu-icon {
-            font-size: 30px;
+            font-size: 24px;
         }
-    }
 
-    .container-footer{
+        .contact-info {
             display: flex;
-            flex-wrap: wrap; 
+            align-items: center;
+        }
+
+        .contact-info span {
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            padding: 0px 30px
+        }
+
+        .contact-info img {
+            height: 20px;
+            width: 20px;
+            margin-right: 5px;
+        }
+
+
+        @media (max-width: 578px) {
+            .nav-links {
+                top: 85px !important;
+            }
+        }
+
+
+
+        @media (max-width: 1289px) {
+            .nav-links a {
+                padding: 10px 0;
+                margin-left: 0px;
+                font-size: 18px;
+                border: 1px solid #ebebeb;
+                width: 100%;
+            }
+
+            .logo img {
+                width: 190px;
+                height: 70px;
+                position: relative;
+                bottom: 0px;
+            }
+
+            .top-bar {
+                padding: 10px 40px;
+                justify-content: center;
+            }
+
+            .navbar {
+                padding: 15px 50px;
+                width: 100%;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background-color: #f4f4f4;
+                position: absolute;
+                top: 114px;
+                right: 0;
+                width: 36%;
+                text-align: center;
+                opacity: 0;
+                transition: opacity 0.3s ease, visibility 0.3s ease;
+
+            }
+
+            .nav-links.active {
+                display: flex;
+                opacity: 1;
+                visibility: visible;
+                z-index: 1;
+                overflow: hidden;
+                margin-right: 20px;
+            }
+
+            .mobile-menu-icon {
+                display: block;
+            }
+
+            .social-media {
+                display: none;
+            }
+
+        }
+
+        @media (max-width: 320px) {
+            .nav-links.active {
+                display: flex;
+                opacity: 1;
+                visibility: visible;
+                z-index: 1;
+                overflow: hidden;
+                margin-right: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .logo img {
+                width: 129px;
+                height: 44px;
+                position: relative;
+                bottom: 1px;
+                right: 25px;
+            }
+
+            .nav-links a {
+                padding: 10px 0;
+                font-size: 18px;
+            }
+        }
+
+
+        @media (max-width: 766px) {
+            .nav-links {
+                top: 85px !important;
+            }
+
+            .top-bar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 330px) {
+            .navbar {
+                padding: 10px;
+                width: 100%;
+            }
+
+            .logo img {
+                width: 70px;
+                height: 30px;
+                position: relative;
+                top: 3px;
+                left: 10px;
+            }
+
+            .nav-links a {
+                padding: 12px 0;
+                font-size: 16px;
+            }
+
+            .menu-icon {
+                font-size: 30px;
+            }
+        }
+
+        .container-footer {
+            display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             background-color: white;
             padding: 0px;
             width: 100%;
         }
         
-        .left-section, .right-section {
-            flex: 1 1 100%; 
-            padding: 20px;
+        .left-section,
+        .right-section {
+            flex: 1 1 100%;
+            padding: 104px;
         }
 
         .left-section {
 
-            text-align: center; 
+            text-align: center;
         }
 
         .left-section img {
-    height: 45px;
-    width: 130px;
+            height: 45px;
+            width: 130px;
         }
 
         .left-section p {
@@ -281,36 +290,36 @@
             color: #666;
             line-height: 1.6;
             margin-top: 20px;
-            text-align: left;
         }
-       
 
 
         .social-icons {
             display: flex;
-            justify-content: flex-start; 
+            justify-content: flex-start;
             margin-top: 20px;
             gap: 10px;
         }
 
         .social-icons a img {
-            width: 35px;
-            height: 35px;
-            background-color: #FBE9DA;
+            width: 50px;
+            height: 50px;
+            /* background-color:#90785e; */
             padding: 10px;
             border-radius: 5px;
         }
-        .social-icons a img :hover{
+
+        .social-icons a img:hover {
             background-color: #FF962D;
+            cursor: pointer;
         }
 
         .right-section {
-            background-color: #2D358A;
+            background-color: #2F378A;
             color: rgb(231, 226, 226);
             clip-path: none;
             text-align: center;
             padding: 20px 10px;
-            height:60vh
+            height: 70vh
         }
 
         .right-section .links {
@@ -318,7 +327,7 @@
             flex-direction: row;
             align-items: center;
             position: relative;
-            left:40px;
+            left: 40px;
             top: 100px;
         }
 
@@ -342,7 +351,7 @@
             text-decoration: underline;
         }
 
-       
+
         @media (min-width: 768px) {
             .container-footer {
                 flex-wrap: nowrap;
@@ -351,26 +360,28 @@
             .left-section {
                 width: 40%;
                 text-align: left;
-                margin-top: 48px;
+                /* margin-top: 48px; */
             }
 
             .right-section {
                 width: 60%;
                 clip-path: polygon(16% 0%, 100% 0%, 100% 100%, 0% 100%);
                 text-align: left;
-                padding: 20px;
+                padding: 100px;
+             
             }
 
 
             .right-section .links {
-        flex-direction: row;
-        justify-content: space-evenly;
-        position: relative;
-        align-items: flex-start;
-        left: 30px;
-        top:10px;
-        max-width: 688px;
-    }
+                flex-direction: row;
+                justify-content: space-evenly;
+                position: relative;
+                align-items: flex-start;
+                left: 30px;
+                top: 10px;
+                max-width: 688px;
+            }
+
             .links ul {
                 padding: 40px;
             }
@@ -385,18 +396,17 @@
                 width: 100%;
             }
 
-            
-            }
 
-            .links ul {
-                padding: 10px; 
-            }
-        
-            
+        }
+
+        .links ul {
+            padding: 10px;
+        }
+
+
         @media (max-width: 480px) {
             .left-section p {
                 font-size: 14px;
-                text-align: left;
             }
 
             .social-icons a img {
@@ -435,27 +445,28 @@
         }
 
         .newsletter-title {
-            margin-top: 20px;
+            margin-top: 100px;
             color: rgba(255, 145, 0, 0.904);
             font-size: 22px;
             margin-bottom: 10px;
             font-weight: bolder;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1px;  
         }
 
         .newsletter-heading {
             color: #344b86;
-            font-size: 22px;
             margin-bottom: 20px;
-            font-size: 50px;
+            font-size: 48px;
             font-weight: bolder;
+            font-family:open 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         .subscription-form {
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-bottom: 100px;
         }
 
         .subscription-form input {
@@ -477,7 +488,7 @@
             border: none;
             font-size: 16px;
             cursor: pointer;
-            width:280px;
+            width: 280px;
             border-radius: 0 5px 5px 0;
             transition: background-color 0.3s ease;
         }
@@ -485,513 +496,573 @@
         .subscription-form button:hover {
             background-color: #ff8500;
         }
-        
-@media (max-width: 768px) {
-    .newsletter-section {
-        height: auto;
-        padding: 20px;
-    }
-
-    .newsletter-title {
-        font-size: 18px;
-    }
-
-    .newsletter-heading {
-        font-size: 20px;
-        margin-bottom: 15px;
-    }
-
-    .subscription-form input {
-        width: 300px;
-        padding: 12px;
-        font-size: 14px;
-    }
-
-    .subscription-form button {
-        padding: 12px 20px;
-        width: 180px;
-        font-size: 14px;
-    }
-}
 
 
-@media (max-width: 640px) {
-    .newsletter-heading {
-        font-size: 20px;
-        margin-bottom: 10px;
-        line-height: 1.4;
-    }
+        .copy_right {
+            height: 76px;
+            background-color: #F4F4F4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
 
-    .subscription-form {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .subscription-form input {
-        width: 100%;
-        max-width: 400px;
-        border-radius: 5px;
-        margin-bottom: 10px;
-    }
-
-    .subscription-form button {
-        width: 100%;
-        max-width: 200px;
-        border-radius: 5px;
-    }
-}
+        .copy_right_text {
+            text-align: center;
+            justify-content: center;
+            font-size: 14px;
+        }
 
 
-@media (max-width: 480px) {
-    .newsletter-section {
-        padding: 15px;
-    }
+        @media (max-width: 768px) {
+            .newsletter-section {
+                height: auto;
+                padding: 20px;
+            }
 
-    .newsletter-heading {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
+            .newsletter-title {
+                font-size: 18px;
+            }
 
-    .newsletter-title {
-        font-size: 16px;
-    }
+            .newsletter-heading {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
 
-    .subscription-form input {
-        font-size: 14px;
-        padding: 10px;
-        max-width: 300px;
-    }
+            .subscription-form input {
+                width: 300px;
+                padding: 12px;
+                font-size: 14px;
+            }
 
-    .subscription-form button {
-        font-size: 14px;
-        padding: 10px 20px;
-        max-width: 150px;
-    }
-}
+            .subscription-form button {
+                padding: 12px 20px;
+                width: 180px;
+                font-size: 14px;
+            }
+        }
 
-@media (max-width: 320px) {
-    .newsletter-heading {
-        font-size: 18px;
-    }
 
-    .subscription-form input {
-        font-size: 12px;
-        padding: 8px;
-        max-width: 260px;
-    }
+        @media (max-width: 640px) {
+            .newsletter-heading {
+                font-size: 20px;
+                margin-bottom: 10px;
+                line-height: 1.4;
+            }
 
-    .subscription-form button {
-        font-size: 12px;
-        padding: 8px 12px;
-        max-width: 120px;
-    }
-}
-   
-</style>
+            .subscription-form {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .subscription-form input {
+                width: 100%;
+                max-width: 400px;
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
+
+            .subscription-form button {
+                width: 100%;
+                max-width: 200px;
+                border-radius: 5px;
+            }
+        }
+
+
+        @media (max-width: 480px) {
+            .newsletter-section {
+                padding: 15px;
+            }
+
+            .newsletter-heading {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            .newsletter-title {
+                font-size: 16px;
+            }
+
+            .subscription-form input {
+                font-size: 14px;
+                padding: 10px;
+                max-width: 300px;
+            }
+
+            .subscription-form button {
+                font-size: 14px;
+                padding: 10px 20px;
+                max-width: 150px;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .newsletter-heading {
+                font-size: 18px;
+            }
+
+            .subscription-form input {
+                font-size: 12px;
+                padding: 8px;
+                max-width: 260px;
+            }
+
+            .subscription-form button {
+                font-size: 12px;
+                padding: 8px 12px;
+                max-width: 120px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <header>
+    <header>
 
-    <div class="top-bar">
-        <div class="contact-info">
-            <span><img src="./image/cll.png" alt="Phone">+919988776655</span>
-            <span><img src="./image/mes.png" alt="Email">@abc.com</span>
-            <span><img src="./image/loc.png" alt="Location">Lorem Ipsum, 223344</span>
+        <div class="top-bar">
+            <div class="contact-info">
+                <span><img src="./image/cll.png" alt="Phone">+919988776655</span>
+                <span><img src="./image/mes.png" alt="Email">@abc.com</span>
+                <span><img src="./image/loc.png" alt="Location">Lorem Ipsum, 223344</span>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
         </div>
-        <div class="social-media">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-        </div>
-    </div>
 
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">
-           <a href="./Home.html"><img src="./image/logo.png" alt="Logo"></a> 
-        </div>
-        <div class="nav-links">
-            <!-- <a href="./Home.html">Home</a> -->
-            <!-- <a href="./About.html">About</a>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="./Home.html"><img src="./image/logo.png" alt="Logo"></a>
+            </div>
+            <div class="nav-links">
+                <!-- <a href="./Home.html">Home</a> -->
+                <!-- <a href="./About.html">About</a>
             <a href="./Gallery.html">Gallery</a> -->
 
-            <a href="./Home.html">HOME</a>
-            <a href="./About.html">COMPANY</a>
+                <a href="./Home.html">HOME</a>
+                <a href="./About.html">COMPANY</a>
 
 
 
-            <!-- <a href="./OurSolution.html">Our Solutions</a>
+
+                <!-- <a href="./OurSolution.html">Our Solutions</a>
             <a href="./Projects.html">Project</a>
             <a href="./Press.html">Press</a>
             <a href="./Contact.html">Contact</a> -->
 
-            <a href="./OurSolution.html">OUR SOLUTIONS</a>
-            <a href="./Projects.html">PROJECT</a>
-            <a href="./Press.html">PRESS</a>
-            <a href="./Contact.html">CONTACT</a>
+                <a href="./OurSolution.html">OUR SOLUTIONS</a>
+                <a href="./Projects.html">PROJECT</a>
+                <a href="./Press.html">PRESS</a>
+                <a href="./Contact.html">CONTACT</a>
 
 
-        </div>
-        <div class="mobile-menu-icon">
-            <span class="menu-icon">&#9776;</span>
-        </div>
-    </nav>
-</header>
+            </div>
+            <div class="mobile-menu-icon">
+                <span class="menu-icon">&#9776;</span>
+            </div>
+        </nav>
+    </header>
 
-  <section class="hero">
-    <!-- <div class="hero-image">
+    <section class="hero">
+        <!-- <div class="hero-image">
       <img src="./image/headbg.png" alt="Construction work">
     </div> -->
-    <div class="hero-content">
-        <img src="./image/dottedbg.png" alt="dots" class="dots">
-        <div class="header-content">
-      <h2 class="subtitle">CONSTRUCTION GIANT</h2>
-      <h1 class="title">The Future of Structural Design Engineering</h1>
-      <p class="description">
-        We combine precision, innovation, and collaboration to create structural solutions that stand the test of time. From concept to completion, we turn your vision into reality with unmatched engineering excellence.
-      </p>
-      <div class="buttons">
-        <a href="./Contact.html" class="btn contact">Get in Touch</a>
-        <a href="./Press.html" class="btn learn">Learn More</a>
-      </div>
-    </div>
-    </div>
-  </section>
-  <div class="service">
-    <section class="stats">
-      <div class="stat-item">
-        <h3>30+</h3>
-        <p>Years of Structural Engineering experience</p>
-      </div>
-      <img src="./image/break.png" alt="break" class="break">
-      <div class="stat-item">
-        <h3>80+</h3>
-        <p>Combined Years of Construction experience</p>
-      </div>
-      <img src="./image/break.png" alt="break" class="break">
-      <div class="stat-item">
-        <h3>1500+</h3>
-        <p>Successfully Completed Projects</p>
-      </div>
-      <img src="./image/break.png" alt="break" class="break">
-      <div class="stat-item">
-        <h3>50+</h3>
-        <p>Locations served across the Globe</p>
-      </div>
+        <div class="hero-content">
+            <img src="./image/dottedbg.png" alt="dots" class="dots">
+            <div class="header-content">
+                <h2 class="subtitle">CONSTRUCTION GIANT</h2>
+                <h1 class="title">The Future of Structural Design Engineering</h1>
+                <p class="description">
+                    We combine precision, innovation, and collaboration to create structural solutions that stand the
+                    test of time. From concept to completion, we turn your vision into reality with unmatched
+                    engineering excellence.
+                </p>
+                <div class="buttons">
+                    <a href="./Contact.html" class="btn contact">Get in Touch</a>
+                    <a href="./Press.html" class="btn learn">Learn More</a>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="services-section">
-      <div class="container-bg">
-        <h2 class="section-title">OUR SERVICES</h2>
-        <h1 class="main-heading">Comprehensive Structural Engineering Services</h1>
-        <div class="services-grid">
-          <div class="service-box">
-            <img src="./image/house.png" alt="Residential Icon">
-            <div class="info">
-            <h3>Residential Homes</h3>
-            <p>Single-family and multifamily homes</p>
-          </div>
-          </div>
-          <div class="service-box">
-            <img src="./image/edu.png" alt="Educational Icon">
-            <div class="info">
-            <h3>Educational Facilities</h3>
-            <p>Schools, student housing</p>
-          </div>
-          </div>
-          <div class="service-box">
-            <img src="./image/com.png" alt="Commercial Icon">
-            <div class="info">
-            <h3>Commercial Projects</h3>
-            <p>Corporate offices, small businesses</p>
-          </div>
-          </div>
-          <div class="service-box">
-            <img src="./image/health.png" alt="Healthcare Icon">
-            <div class="info">
-            <h3>Healthcare Structures</h3>
-            <p>Hospitals and medical buildings</p>
-          </div>
-          </div>
-          <div class="service-box">
-            <img src="./image/industry.png" alt="Industrial Icon">
-            <div class="info">
-            <h3>Industrial Buildings</h3>
-            <p>Cost-effective and efficient structural solutions</p>
-          </div>
-          </div>
-          <div class="service-box">
-            <img src="./image/revo.png" alt="Renovations Icon">
-            <div class="info">
-            <h3>Renovations & Retrofits</h3>
-            <p>Upgrading and reinforcing existing structures</p>
-          </div>
-          </div>
-        </div>
-        <a href="./OurSolution.html" class="learn-more-btn">LEARN MORE</a>
-      </div>
-    </section>
-   
-  </div>
-<section class="about-sec">
-    <div class="about-banner">
-        <div class="about-text">
-            <h2 class="about-1">ABOUT US</h2>
-            <h2 class="about-2">Your Trusted Partner in Engineering Excellence</h2>
-            <p class="about-3">At Eiffel Industries, LLC, we specialize in delivering innovative design engineering solutions that align with the latest building codes. Based in Scottsdale, AZ, our team of experts has over two decades of experience and is dedicated to ensuring a smooth and efficient permitting process for your project. From preexisting residential homes to large-scale commercial buildings, we bring knowledge, precision, and a commitment to excellence at every phase of construction.</p>
-            <a href="./About.html">
-                <button class="learn-btn">LEARN MORE</button>
-              </a>
-              
-        </div>
-        <div class="trust-banner">
-            <img src="./image/banner.png" alt="banner" class="banner-img">
-        </div>
-    </div>
-  </section>
-  <section class="why-us">
-    <h2 class="why-title">WHY US</h2>
-    <h1 class="why-head">Precision, Innovation, and Collaboration<br>Our Foundation for Success</h1>
-
-    <div class="why-us-content">
-        <div class="image-sec">
-      <div class="image-grid">
-        <img src="./image/frame.png" alt="Construction Image 1" class="construction-img1">
-        
-      </div>
-    </div>
-
-      <div class="features">
-        <div class="feature">
-            <div class="visionary">
-            <img src="./image/one.png" alt="one" class="number">
-            <div>
-            <h2 class="vision-text">Visionary Engineering</h2>
-          <p class="vision-para">We don't just build structures—we bring your vision to life with creativity and precision.</p>
-        </div>
-    </div>
-    </div>
-        <div class="feature">
-            <div class="visionary">
-            <img src="./image/two.png" alt="two" class="number">
-            <div>
-            <h2 class="vision-text"> Personalized Attention</h2>
-          <p class="vision-para">Every project is unique, and we treat it that way, crafting solutions tailored to your dreams.</p>
-        </div>
-    </div>
-    </div>
-        <div class="feature">
-            <div class="visionary">
-            <img src="./image//three.png" alt="three" class="number">
-            <div>
-            <h2 class="vision-text">Enduring Quality</h2>
-          <p class="vision-para">Our work stands the test of time, ensuring beauty and functionality for generations to come.</p>
-        </div>
-    </div>
-    </div>
-        <div class="feature">
-            <div class="visionary">
-            <img src="./image/four.png" alt="four" class="number">
-            <div>
-            <h2 class="vision-text"> Seamless Partnerships</h2>
-          <p class="vision-para">We believe in collaboration that inspires trust and delivers exceptional results, every time.</p>
-        </div>
-    </div>
-    </div>
-      </div>
-    </div>
-
-  </section>
-  <section class="projects">
-    <div class="projects-left">
-        <h3>Our Projects</h3>
-        <h1>Transforming Ideas into Structures</h1>
-        <p class="pro-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.</p>
-        <a href="./Projects.html" class="see-btn">SEE ALL</a>
-    </div>
-    <div class="projects-right">
-        <div class="slider">
-            <div class="card">
-                <img src="./image/slide1.png" alt="Project 1">
-                <h2>Building the Future: Crafting Innovative and Sustainable Structures That Define Excellence</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie...</p>
-                <a href="#" class="read-more">Read More →</a>
+    <div class="service">
+        <section class="stats">
+            <div class="stat-item">
+                <h3>30+</h3>
+                <p>Years of Structural Engineering experience</p>
             </div>
-            <div class="card">
-                <img src="./image/slide2.png" alt="Project 2">
-                <h2>Building the Future: Crafting Innovative and Sustainable Structures That Define Excellence</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie...</p>
-                <a href="#" class="read-more">Read More →</a>
+            <img src="./image/break.png" alt="break" class="break">
+            <div class="stat-item">
+                <h3>80+</h3>
+                <p>Combined Years of Construction experience</p>
             </div>
-            <div class="card">
-                <img src="./image/slide3.png" alt="Project 3">
-                <h2>Building the Future: Crafting Innovative and Sustainable Structures That Define Excellence</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie...</p>
-                <a href="#" class="read-more">Read More →</a>
+            <img src="./image/break.png" alt="break" class="break">
+            <div class="stat-item">
+                <h3>1500+</h3>
+                <p>Successfully Completed Projects</p>
             </div>
-            <div class="card">
-              <img src="./image/slide1.png" alt="Project 1">
-              <h2>Building the Future: Crafting Innovative and Sustainable Structures That Define Excellence</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie...</p>
-              <a href="#" class="read-more">Read More →</a>
-          </div>
-          <div class="card">
-              <img src="./image/slide2.png" alt="Project 2">
-              <h2>Building the Future: Crafting Innovative and Sustainable Structures That Define Excellence</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie...</p>
-              <a href="#" class="read-more">Read More →</a>
-          </div>
-          <div class="card">
-              <img src="./image/slide3.png" alt="Project 3">
-              <h2>Building the Future: Crafting Innovative and Sustainable Structures That Define Excellence</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie...</p>
-              <a href="#" class="read-more">Read More →</a>
-          </div>
-           
-        </div>
-    </div>
-</section>
-<section class="experts-section">
- 
-      <div class="expert-image">
-          <img src="./image/man.png" alt="Expert" class="man-img">
-      </div>
-      <div class="expert-content">
-          <h4>OUR EXPERTS</h4>
-          <h2 class="mastermind">Masterminds Behind Every Build: Skilled Hands, Proven Expertise</h2>
-          <p class="master-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.</p>
-          <a href="./Contact.html" class="cta-button">GET IN TOUCH</a>
-      </div>
-  
-</section>
-
- <section class="testimonial-section">
-      
-            <div class="section-header">
-                <h4>TESTIMONIALS</h4>
-                <h2>Know Why Our Clients Trust Us</h2>
+            <img src="./image/break.png" alt="break" class="break">
+            <div class="stat-item">
+                <h3>50+</h3>
+                <p>Locations served across the Globe</p>
             </div>
-            <div class="testimonial-content">
-                <div class="testimonial-profile
-                ">
-                    <div class="man-image">
-                        <img src="./image/happyman.png" alt="David William">
+        </section>
+        <section class="services-section">
+            <div class="container-bg">
+                <h2 class="section-title">OUR SERVICES</h2>
+                <h1 class="main-heading">Comprehensive Structural Engineering Services</h1>
+                <div class="services-grid">
+                    <div class="service-box">
+                        <img src="./image/house.png" alt="Residential Icon">
+                        <div class="info">
+                            <h3>Residential Homes</h3>
+                            <p>Single-family and multifamily homes</p>
+                        </div>
                     </div>
-                    <div class="profile-info">
-                      <h3>David William</h3>
-                      <p>Senior Brand Specialist</p>
-                  </div>
+                    <div class="service-box">
+                        <img src="./image/edu.png" alt="Educational Icon">
+                        <div class="info">
+                            <h3>Educational Facilities</h3>
+                            <p>Schools, student housing</p>
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <img src="./image/com.png" alt="Commercial Icon">
+                        <div class="info">
+                            <h3>Commercial Projects</h3>
+                            <p>Corporate offices, small businesses</p>
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <img src="./image/health.png" alt="Healthcare Icon">
+                        <div class="info">
+                            <h3>Healthcare Structures</h3>
+                            <p>Hospitals and medical buildings</p>
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <img src="./image/industry.png" alt="Industrial Icon">
+                        <div class="info">
+                            <h3>Industrial Buildings</h3>
+                            <p>Cost-effective and efficient structural solutions</p>
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <img src="./image/revo.png" alt="Renovations Icon">
+                        <div class="info">
+                            <h3>Renovations & Retrofits</h3>
+                            <p>Upgrading and reinforcing existing structures</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="testimonial-review">
-                  
-                        <span class="quote-mark">
-                          <img src="./image/quotes2.png" alt="quote" class="quote-img">
-                        
-                        </span>
-                        <div class="exception-para">
-                        <h2 class="test-head">Exceptional Craftsmanship and Unmatched Professionalism</h2>
-                        <p class="test-para">Working with Eiffel Industries was an absolute pleasure. Their team of experts demonstrated incredible attention to detail and dedication throughout the entire process. From the initial design phase to the final touches, they consistently delivered high-quality work, always staying on schedule and within budget. Their collaborative approach made the project seamless, and their commitment to excellence truly set them apart. I couldn't be happier with the results and highly recommend them for any construction or engineering needs.</p>
-                      </div>
+                <a href="./OurSolution.html" class="learn-more-btn">LEARN MORE</a>
+            </div>
+        </section>
+
+    </div>
+    <section class="about-sec">
+        <div class="about-banner">
+            <div class="about-text">
+                <h2 class="about-1">ABOUT US</h2>
+                <h2 class="about-2">Your Trusted Partner in Engineering Excellence</h2>
+                <p class="about-3">At Eiffel Industries, LLC, we specialize in delivering innovative design engineering
+                    solutions that align with the latest building codes. Based in Scottsdale, AZ, our team of experts
+                    has over two decades of experience and is dedicated to ensuring a smooth and efficient permitting
+                    process for your project. From preexisting residential homes to large-scale commercial buildings, we
+                    bring knowledge, precision, and a commitment to excellence at every phase of construction.</p>
+                <a href="./About.html">
+                    <button class="learn-btn">LEARN MORE</button>
+                </a>
+
+            </div>
+            <div class="trust-banner">
+                <img src="./image/banner.png" alt="banner" class="banner-img">
+            </div>
+        </div>
+    </section>
+    <section class="why-us">
+        <h2 class="why-title">WHY US</h2>
+        <h1 class="why-head">Precision, Innovation, and Collaboration<br>Our Foundation for Success</h1>
+
+        <div class="why-us-content">
+            <div class="image-sec">
+                <div class="image-grid">
+                    <img src="./image/frame.png" alt="Construction Image 1" class="construction-img1">
+
                 </div>
             </div>
-       
-    </section>
-    <section>
-      <div class="newsletter-section">
-        <div class="newsletter-title">Newsletter</div>
-        <div class="newsletter-heading">Subscribe To Our Newsletter To Stay Updated With <br/> Our Latest Construction News and Trends</div>
-        <div class="subscription-form">
-            <input type="email" placeholder="Enter your email" required>
-            <button type="submit">Subscribe</button>
-        </div>
-    </div>
-    </section>
-    <section>
-      <div class="container-footer">
-        <!-- Left Section -->
-        <div class="left-section">
-            <a href="./Home.html"><img src="./image//logo.png" alt="Eiffel Logo" class="logo"></a> 
-            <p>Lorem ipsuLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis telluLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.</p>
-            <div class="social-icons">
-                <a href="#"><img src="./image/fb.png" alt="Facebook"></a>
-                <a href="#"><img src="./image/ins.png" alt="Instagram"></a>
-                <a href="#"><img src="./image/lnk.png" alt="LinkedIn"></a>
-                <a href="#"><img src="./image/x.png" alt="X"></a>
-                <a href="#"><img src="./image/yt.png" alt="YouTube"></a>
+
+            <div class="features">
+                <div class="feature">
+                    <div class="visionary">
+                        <img src="./image/one.png" alt="one" class="number">
+                        <div>
+                            <h2 class="vision-text">Visionary Engineering</h2>
+                            <p class="vision-para">We don't just build structures—we bring your vision to life with
+                                creativity and precision.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="visionary">
+                        <img src="./image/two.png" alt="two" class="number">
+                        <div>
+                            <h2 class="vision-text"> Personalized Attention</h2>
+                            <p class="vision-para">Every project is unique, and we treat it that way, crafting solutions
+                                tailored to your dreams.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="visionary">
+                        <img src="./image//three.png" alt="three" class="number">
+                        <div>
+                            <h2 class="vision-text">Enduring Quality</h2>
+                            <p class="vision-para">Our work stands the test of time, ensuring beauty and functionality
+                                for generations to come.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="visionary">
+                        <img src="./image/four.png" alt="four" class="number">
+                        <div>
+                            <h2 class="vision-text"> Seamless Partnerships</h2>
+                            <p class="vision-para">We believe in collaboration that inspires trust and delivers
+                                exceptional results, every time.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!-- Right Section -->
-        <div class="right-section">
-            <div class="links">
-                <ul>
-                    <li><strong>Explore</strong></li>
-                    <li><a href="./Home.html">Home</a></li>
-                    <li><a href="./About.html">About</a></li>
-                    <li><a href="./Gallery.html">Company</a></li>
-                    <li><a href="./OurSolution.html">Our Solutions</a></li>
-                    <li><a href="./Projects.html">Projects</a></li>
-                    <li><a href="./pressNews.html">Press</a></li>
-                    <li><a href="./Contact.html">Contact</a></li>
-                </ul>
-                <ul>
-                    <li><strong>Projects</strong></li>
-                    <li><a href="#">New Constructions</a></li>
-                    <li><a href="#">Reconstructions</a></li>
-                    <li><a href="#">Restorations</a></li>
-                    <li><a href="#">Capital Repair</a></li>
-                    <li><a href="#">Re-equipment</a></li>
-                    <li><a href="#">Individual Planning</a></li>
-                </ul>
-                <ul>
-                    <li><strong>Policy</strong></li>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Security</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                </ul>
+    </section>
+    <section class="projects">
+        <div class="projects-left">
+            <h3>Our Projects</h3>
+            <h1>Transforming Ideas into Structures</h1>
+            <p class="pro-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
+                dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus,
+                ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.</p>
+            <a href="./Projects.html" class="see-btn">SEE ALL</a>
+        </div>
+        <div class="projects-right">
+            <div class="slider">
+                <div class="card">
+                    <img src="./image/slide1.png" alt="Project 1">
+                    <h2>Building the Future: Crafting Innovative and Sustainable Structures That Define Excellence</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie...</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+                <div class="card">
+                    <img src="./image/slide2.png" alt="Project 2">
+                    <h2>Building the Future: Crafting Innovative and Sustainable Structures That Define Excellence</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie...</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+                <div class="card">
+                    <img src="./image/slide3.png" alt="Project 3">
+                    <h2>Building the Future: Crafting Innovative and Sustainable Structures That Define Excellence</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie...</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+                <div class="card">
+                    <img src="./image/slide1.png" alt="Project 1">
+                    <h2>Building the Future: Crafting Innovative and Sustainable Structures That Define Excellence</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie...</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+                <div class="card">
+                    <img src="./image/slide2.png" alt="Project 2">
+                    <h2>Building the Future: Crafting Innovative and Sustainable Structures That Define Excellence</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie...</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+                <div class="card">
+                    <img src="./image/slide3.png" alt="Project 3">
+                    <h2>Building the Future: Crafting Innovative and Sustainable Structures That Define Excellence</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie...</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+
             </div>
         </div>
-    </div>
     </section>
-<script>
-let index = 0;
+    <section class="experts-section">
 
-function showNextSlide() {
-    const slider = document.querySelector('.slider');
-    const cards = document.querySelectorAll('.card');
-    
-    
-    const totalSlides = cards.length;
-    
+        <div class="expert-image">
+            <img src="./image/man.png" alt="Expert" class="man-img">
+        </div>
+        <div class="expert-content">
+            <h4>OUR EXPERTS</h4>
+            <h2 class="mastermind">Masterminds Behind Every Build: Skilled Hands, Proven Expertise</h2>
+            <p class="master-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
+                dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus,
+                ut interdum tellus elit sed risus.</p>
+            <a href="./Contact.html" class="cta-button">GET IN TOUCH</a>
+        </div>
+
+    </section>
+
+    <section class="testimonial-section">
+
+        <div class="section-header">
+            <h4>TESTIMONIALS</h4>
+            <h2>Know Why Our Clients Trust Us</h2>
+        </div>
+        <div class="testimonial-content">
+            <div class="testimonial-profile
+                ">
+                <div class="man-image">
+                    <img src="./image/happyman.png" alt="David William">
+                </div>
+                <div class="profile-info">
+                    <h3>David William</h3>
+                    <p>Senior Brand Specialist</p>
+                </div>
+            </div>
+            <div class="testimonial-review">
+
+                <span class="quote-mark">
+                    <img src="./image/quotes2.png" alt="quote" class="quote-img">
+
+                </span>
+                <div class="exception-para">
+                    <h2 class="test-head">Exceptional Craftsmanship and Unmatched Professionalism</h2>
+                    <p class="test-para">Working with Eiffel Industries was an absolute pleasure. Their team of experts
+                        demonstrated incredible attention to detail and dedication throughout the entire process. From
+                        the initial design phase to the final touches, they consistently delivered high-quality work,
+                        always staying on schedule and within budget. Their collaborative approach made the project
+                        seamless, and their commitment to excellence truly set them apart. I couldn't be happier with
+                        the results and highly recommend them for any construction or engineering needs.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section>
+        <div class="newsletter-section">
+            <div class="newsletter-title">Newsletter</div>
+            <div class="newsletter-heading">Subscribe To Our Newsletter To Stay Updated With <br /> Our Latest
+                Construction News and Trends</div>
+            <div class="subscription-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">
+                    SUBSCRIBE
+                </button>
+            </div>
+        </div>
+    </section>
+
+
    
-    index++;
 
-    
-    if (index > totalSlides - 2) { 
-        index = 0;
-    }
+    <section>
+        <div class="container-footer">
+            <!-- Left Section -->
+            <div class="left-section">
+                <a href="./Home.html"><img src="./image//logo.png" alt="Eiffel Logo" class="logo"></a>
+                <p>Lorem ipsuLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum
+                    est a, mattis telluLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                    molestie, dictum est a, mattis tellum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                    molestie, dictum est a, mattis tellus.</p>
+                <div class="social-icons">
+                    <a href="#"><img src="./image/fbanC.png" alt="Facebook"></a>
+                    <a href="#"><img src="./image/inana.png" alt="Instagram"></a>
+                    <a href="#"><img src="./image/indana.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="./image/tana.png" alt="X"></a>
+                    <a href="#"><img src="./image/ytana.png" alt="YouTube"></a>
+                </div>
+            </div>
 
-    
-    const slideWidth = cards[0].clientWidth + 20;
-    slider.style.transform = `translateX(-${index * slideWidth}px)`;
-    slider.style.transition = 'transform 0.5s ease'; 
-}
+            <!-- Right Section -->
+            <div class="right-section">
+                <div class="links">
+                    <ul>
+                        <li><strong>Explore</strong></li>
+                        <li><a href="./Home.html">Home</a></li>
+                        <li><a href="./About.html">About</a></li>
+                        <li><a href="./Gallery.html">Company</a></li>
+                        <li><a href="./OurSolution.html">Our Solutions</a></li>
+                        <li><a href="./Projects.html">Projects</a></li>
+                        <li><a href="./pressNews.html">Press</a></li>
+                        <li><a href="./Contact.html">Contact</a></li>
+                    </ul>
+                    <ul>
+                        <li><strong>Projects</strong></li>
+                        <li><a href="#">New Constructions</a></li>
+                        <li><a href="#">Reconstructions</a></li>
+                        <li><a href="#">Restorations</a></li>
+                        <li><a href="#">Capital Repair</a></li>
+                        <li><a href="#">Re-equipment</a></li>
+                        <li><a href="#">Individual Planning</a></li>
+                    </ul>
+                    <ul>
+                        <li><strong>Policy</strong></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-setInterval(showNextSlide, 3000);
+    <section>
+        <div class="copy_right">
+
+            <h6 class="copy_right_text">© Eiffel Industries 2024. All Rights Reserved</h6>
+        </div>
+    </section>
+
+    <script>
+        let index = 0;
+
+        function showNextSlide() {
+            const slider = document.querySelector('.slider');
+            const cards = document.querySelectorAll('.card');
+
+
+            const totalSlides = cards.length;
+
+
+            index++;
+
+
+            if (index > totalSlides - 2) {
+                index = 0;
+            }
+
+
+            const slideWidth = cards[0].clientWidth + 20;
+            slider.style.transform = `translateX(-${index * slideWidth}px)`;
+            slider.style.transition = 'transform 0.5s ease';
+        }
+
+
+        setInterval(showNextSlide, 3000);
 
 
         // Toggle mobile menu
         const mobileMenuIcon = document.querySelector('.menu-icon');
         const navLinks = document.querySelector('.nav-links');
-        
+
         mobileMenuIcon.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         });
-    
 
 
-</script>
+
+    </script>
 </body>
+
 </html>

@@ -1,392 +1,301 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
-    
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
-  
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
     <link rel="stylesheet" href="project.css">
     <style>
-      * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-      }
-  
-      body {
-          font-family: Arial, sans-serif;
-      }
-  
-      .top-bar {
-          background-color: #3d4a95;
-          color: white;
-          display: flex;
-          gap:30px;
-          justify-content: space-between;
-          align-items: center;
-          height: 30px;
-          padding: 10px 70px; 
-      }
-  
-      .social-media {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background-color: #3d4a95;
-          padding: 10px;
-          height: 20px;
-          position: relative;
-          right: 20px;
-      }
-      .social-icons a img:hover{
-                background-color: #FF962D;
-                cursor: pointer;
-            }
-      .social-media a {
-          color: white;
-          font-size: 24px;
-          margin: 0 15px;
-      }
-  
-      .navbar {
-          background-color: #f4f4f4;
-          display: flex;
-          width: 100%;
-          height: 85px;
-          justify-content: space-between;
-          align-items: center;
-          padding: 15px 100px;
-      }
-  
-      .logo {
-          display: flex;
-          align-items: center;
-      }
-  
-      .logo img {
-          width: 120px;
-          height: 40px;
-      }
-  
-      .nav-links {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-      }
-  
-      .nav-links a {
-          color: #333;
-          text-decoration: none;
-          margin-right: 4px;
-          padding: 0px 15px;
-          margin-left: 60px;
-          font-weight: bold;
-      }
-  
-      .nav-links a:last-child {
-          margin-right: 0;
-      }
-  
-      .nav-links a:hover {
-          color: orange;
-      }
-  
-      .mobile-menu-icon {
-          display: none;
-          cursor: pointer;
-      }
-  
-      .menu-icon {
-          font-size: 24px;
-      }
-  
-      .contact-info {
-          display: flex;
-          align-items: center;
-      }
-  
-      .contact-info span {
-          margin-right: 20px; 
-          display: flex;
-          align-items: center;
-          padding:0px 30px
-      }
-  
-      .contact-info img {
-          height: 20px;
-          width: 20px;
-          margin-right: 5px;
-      }
-  
-  
-      @media (max-width: 578px) {
-          .nav-links {
-             top: 85px !important;
-          }
-      }
-  
-  
-  
-      @media (max-width: 1289px) {
-          .nav-links a {
-      padding: 10px 0;
-      margin-left: 0px;
-      font-size: 18px;
-      border: 1px solid #ebebeb;
-      width: 100%;
-  }
-          .logo img {
-              width: 190px;
-              height: 70px;
-              position: relative;
-              bottom: 0px;
-          }
-  
-          .top-bar {
-              padding: 10px 40px;
-              justify-content: center; 
-          }
-  
-          .navbar {
-              padding: 15px 50px;
-              width: 100%;
-          }
-  
-          .nav-links {
-              display: none;
-              flex-direction: column;
-              background-color: #f4f4f4;
-              position: absolute;
-              top: 114px;
-              right: 0;
-              width: 36%;
-              text-align: center;
-              opacity: 0;
-              transition: opacity 0.3s ease, visibility 0.3s ease;
-  
-          }
-  
-          .nav-links.active {
-              display: flex;
-              opacity: 1;
-              visibility: visible;
-              z-index: 1;
-              overflow: hidden;
-              margin-right: 20px;
-          }
-  
-          .mobile-menu-icon {
-              display: block;
-          }
-  
-          .social-media {
-              display: none; 
-          }
-          
-      }
-  
-      @media (max-width: 320px) {
-          .nav-links.active {
-              display: flex;
-              opacity: 1;
-              visibility: visible;
-              z-index: 1;
-              overflow: hidden;
-              margin-right: 20px;
-          }
-      }
-      @media (max-width: 768px) {
-          .logo img {
-              width: 129px;
-              height: 44px;
-              position: relative;
-              bottom: 1px;
-              right: 25px;
-          }
-  
-          .nav-links a {
-              padding: 10px 0;
-              font-size: 18px;
-          }
-      }
-  
-     
-      @media (max-width: 766px) {
-          .nav-links {
-      top: 85px !important;
-  }
-          .top-bar {
-              display: none;
-          }
-      }
-  
-      @media (max-width: 330px) {
-          .navbar {
-              padding: 10px;
-              width: 100%;
-          }
-  
-          .logo img {
-              width: 70px;
-              height: 30px;
-              position: relative;
-              top: 3px;
-              left: 10px;
-          }
-  
-          .nav-links a {
-              padding: 12px 0;
-              font-size: 16px;
-          }
-  
-          .menu-icon {
-              font-size: 30px;
-          }
-      }
-  
-      .container-footer{
-              display: flex;
-              flex-wrap: wrap; 
-              justify-content: space-between;
-              background-color: white;
-              padding: 0px;
-              width: 100%;
-          }
-  
-          .left-section, .right-section {
-              flex: 1 1 100%; 
-              padding: 20px;
-          }
-  
-          .left-section {
-              text-align: center; 
-          }
-  
-          .left-section img {
-    height: 45px;
-    width: 130px;
-}
-  
-          .left-section p {
-              font-size: 16px;
-              color: #666;
-              line-height: 1.6;
-              margin-top: 20px;
-              text-align: left;
-          }
-  
-          .social-icons {
-              display: flex;
-              justify-content: flex-start; 
-              margin-top: 20px;
-              gap: 10px;
-          }
-  
-          .social-icons a img {
-              width: 35px;
-              height: 35px;
-              background-color: #FBE9DA;
-              padding: 10px;
-              border-radius: 5px;
-          }
-  
-          .right-section {
-              background-color: #2D358A;
-              color: rgb(231, 226, 226);
-              clip-path: none;
-              text-align: center;
-              padding: 20px 10px;
-              height:60vh
-          }
-  
-          .right-section .links {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              position: relative;
-              left:40px;
-              top: 100px;
-          }
-  
-          .links ul {
-              list-style: none;
-              padding: 0;
-              margin: 20px 0;
-          }
-  
-          .links ul li {
-              margin-bottom: 10px;
-              font-size: 16px;
-          }
-  
-          .links ul li a {
-              text-decoration: none;
-              color: rgb(211, 205, 205);
-          }
-  
-          .links ul li a:hover {
-              text-decoration: underline;
-          }
-  
-          .container-footer{
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .top-bar {
+            background-color: #3d4a95;
+            color: white;
             display: flex;
-            flex-wrap: wrap; 
+            gap: 30px;
+            justify-content: space-between;
+            align-items: center;
+            height: 30px;
+            padding: 10px 70px;
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #3d4a95;
+            padding: 10px;
+            height: 20px;
+            position: relative;
+            right: 20px;
+        }
+
+        .social-icons a img:hover {
+            background-color: #FF962D;
+            cursor: pointer;
+        }
+
+        .social-media a {
+            color: white;
+            font-size: 24px;
+            margin: 0 15px;
+        }
+
+        .navbar {
+            background-color: #f4f4f4;
+            display: flex;
+            width: 100%;
+            height: 85px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 100px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 120px;
+            height: 40px;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            margin-right: 4px;
+            padding: 0px 15px;
+            margin-left: 60px;
+            font-weight: bold;
+        }
+
+        .nav-links a:last-child {
+            margin-right: 0;
+        }
+
+        .nav-links a:hover {
+            color: orange;
+        }
+
+        .mobile-menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+
+        .menu-icon {
+            font-size: 24px;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info span {
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            padding: 0px 30px
+        }
+
+        .contact-info img {
+            height: 20px;
+            width: 20px;
+            margin-right: 5px;
+        }
+
+
+        @media (max-width: 578px) {
+            .nav-links {
+                top: 85px !important;
+            }
+        }
+
+
+
+        @media (max-width: 1289px) {
+            .nav-links a {
+                padding: 10px 0;
+                margin-left: 0px;
+                font-size: 18px;
+                border: 1px solid #ebebeb;
+                width: 100%;
+            }
+
+            .logo img {
+                width: 190px;
+                height: 70px;
+                position: relative;
+                bottom: 0px;
+            }
+
+            .top-bar {
+                padding: 10px 40px;
+                justify-content: center;
+            }
+
+            .navbar {
+                padding: 15px 50px;
+                width: 100%;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background-color: #f4f4f4;
+                position: absolute;
+                top: 114px;
+                right: 0;
+                width: 36%;
+                text-align: center;
+                opacity: 0;
+                transition: opacity 0.3s ease, visibility 0.3s ease;
+
+            }
+
+            .nav-links.active {
+                display: flex;
+                opacity: 1;
+                visibility: visible;
+                z-index: 1;
+                overflow: hidden;
+                margin-right: 20px;
+            }
+
+            .mobile-menu-icon {
+                display: block;
+            }
+
+            .social-media {
+                display: none;
+            }
+
+        }
+
+        @media (max-width: 320px) {
+            .nav-links.active {
+                display: flex;
+                opacity: 1;
+                visibility: visible;
+                z-index: 1;
+                overflow: hidden;
+                margin-right: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .logo img {
+                width: 129px;
+                height: 44px;
+                position: relative;
+                bottom: 1px;
+                right: 25px;
+            }
+
+            .nav-links a {
+                padding: 10px 0;
+                font-size: 18px;
+            }
+        }
+
+
+        @media (max-width: 766px) {
+            .nav-links {
+                top: 85px !important;
+            }
+
+            .top-bar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 330px) {
+            .navbar {
+                padding: 10px;
+                width: 100%;
+            }
+
+            .logo img {
+                width: 70px;
+                height: 30px;
+                position: relative;
+                top: 3px;
+                left: 10px;
+            }
+
+            .nav-links a {
+                padding: 12px 0;
+                font-size: 16px;
+            }
+
+            .menu-icon {
+                font-size: 30px;
+            }
+        }
+
+        .container-footer {
+            display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             background-color: white;
             padding: 0px;
             width: 100%;
         }
-        
-        .left-section, .right-section {
-            flex: 1 1 100%; 
-            padding: 20px;
+
+        .left-section,
+        .right-section {
+            flex: 1 1 100%;
+            padding: 104px;
         }
 
         .left-section {
 
-            text-align: center; 
+            text-align: center;
         }
 
         .left-section img {
-    height: 45px;
-    width: 130px;
-}
+            height: 45px;
+            width: 130px;
+        }
 
         .left-section p {
             font-size: 16px;
             color: #666;
             line-height: 1.6;
             margin-top: 20px;
-            text-align: left;
         }
+
        
-        .social-icons {
-            display: flex;
-            justify-content: flex-start; 
-            margin-top: 20px;
-            gap: 10px;
-        }
 
-        .social-icons a img {
-            width: 35px;
-            height: 35px;
-            background-color: #FBE9DA;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .social-icons a img :hover{
-            background-color: #FF962D;
-        }
-
+        
         .right-section {
-            background-color: #2D358A;
+            background-color: #2F378A;
             color: rgb(231, 226, 226);
             clip-path: none;
             text-align: center;
             padding: 20px 10px;
-            height:60vh
+            height: 70vh
         }
 
         .right-section .links {
@@ -394,9 +303,53 @@
             flex-direction: row;
             align-items: center;
             position: relative;
-            left:40px;
+            left: 40px;
             top: 100px;
         }
+
+        .links ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .links ul li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .links ul li a {
+            text-decoration: none;
+            color: rgb(211, 205, 205);
+        }
+
+        .links ul li a:hover {
+            text-decoration: underline;
+        }
+
+
+
+        .social-icons {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 20px;
+            gap: 10px;
+        }
+
+        .social-icons a img {
+            width: 50px;
+            height: 50px;
+            /* background-color:#90785e; */
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .social-icons a img:hover {
+            background-color: #FF962D;
+            cursor: pointer;
+        }
+
+
 
         .links ul {
             list-style: none;
@@ -432,27 +385,28 @@
         }
 
         .newsletter-title {
-            margin-top: 20px;
+            margin-top: 100px;
             color: rgba(255, 145, 0, 0.904);
             font-size: 22px;
             margin-bottom: 10px;
             font-weight: bolder;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1px;  
         }
 
         .newsletter-heading {
             color: #344b86;
-            font-size: 22px;
+            /* font-size: 22px; */
             margin-bottom: 20px;
-            font-size: 50px;
+            font-size: 48px;
             font-weight: bolder;
+            font-family:open 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-
         .subscription-form {
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-bottom: 100px;
         }
 
         .subscription-form input {
@@ -474,7 +428,7 @@
             border: none;
             font-size: 16px;
             cursor: pointer;
-            width:280px;
+            width: 280px;
             border-radius: 0 5px 5px 0;
             transition: background-color 0.3s ease;
         }
@@ -483,7 +437,7 @@
             background-color: #ff8500;
         }
 
-       
+
         @media (min-width: 768px) {
             .container-footer {
                 flex-wrap: nowrap;
@@ -492,26 +446,28 @@
             .left-section {
                 width: 40%;
                 text-align: left;
-                margin-top: 48px;
+                /* margin-top: 48px; */
             }
 
             .right-section {
                 width: 60%;
                 clip-path: polygon(16% 0%, 100% 0%, 100% 100%, 0% 100%);
                 text-align: left;
-                padding: 20px;
+                padding: 100px;
+             
             }
 
 
             .right-section .links {
-        flex-direction: row;
-        justify-content: space-evenly;
-        position: relative;
-        align-items: flex-start;
-        left: 30px;
-        top:10px;
-        max-width: 688px;
-    }
+                flex-direction: row;
+                justify-content: space-evenly;
+                position: relative;
+                align-items: flex-start;
+                left: 30px;
+                top: 10px;
+                max-width: 688px;
+            }
+
             .links ul {
                 padding: 40px;
             }
@@ -526,18 +482,17 @@
                 width: 100%;
             }
 
-            
-            }
 
-            .links ul {
-                padding: 10px; 
-            }
-        
-            
+        }
+
+        .links ul {
+            padding: 10px;
+        }
+
+
         @media (max-width: 480px) {
             .left-section p {
                 font-size: 14px;
-                text-align: left;
             }
 
             .social-icons a img {
@@ -558,346 +513,386 @@
                 left: -19px;
                 flex-direction: row;
                 top: 20px;
-    margin: 10px;
+                margin: 10px;
             }
         }
-        
-@media (max-width: 768px) {
-    .newsletter-section {
-        height: auto;
-        padding: 20px;
-    }
 
-    .newsletter-title {
-        font-size: 18px;
-    }
+        @media (max-width: 768px) {
+            .newsletter-section {
+                height: auto;
+                padding: 20px;
+            }
 
-    .newsletter-heading {
-        font-size: 20px;
-        margin-bottom: 15px;
-    }
+            .newsletter-title {
+                font-size: 18px;
+            }
 
-    .subscription-form input {
-        width: 300px;
-        padding: 12px;
-        font-size: 14px;
-    }
+            .newsletter-heading {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
 
-    .subscription-form button {
-        padding: 12px 20px;
-        width: 180px;
-        font-size: 14px;
-    }
-}
+            .subscription-form input {
+                width: 300px;
+                padding: 12px;
+                font-size: 14px;
+            }
 
-
-@media (max-width: 640px) {
-    .newsletter-heading {
-        font-size: 20px;
-        margin-bottom: 10px;
-        line-height: 1.4;
-    }
-
-    .subscription-form {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .subscription-form input {
-        width: 100%;
-        max-width: 400px;
-        border-radius: 5px;
-        margin-bottom: 10px;
-    }
-
-    .subscription-form button {
-        width: 100%;
-        max-width: 200px;
-        border-radius: 5px;
-    }
-}
+            .subscription-form button {
+                padding: 12px 20px;
+                width: 180px;
+                font-size: 14px;
+            }
+        }
 
 
-@media (max-width: 480px) {
-    .newsletter-section {
-        padding: 15px;
-    }
+        @media (max-width: 640px) {
+            .newsletter-heading {
+                font-size: 20px;
+                margin-bottom: 10px;
+                line-height: 1.4;
+            }
 
-    .newsletter-heading {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
+            .subscription-form {
+                flex-direction: column;
+                align-items: center;
+            }
 
-    .newsletter-title {
-        font-size: 16px;
-    }
+            .subscription-form input {
+                width: 100%;
+                max-width: 400px;
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
 
-    .subscription-form input {
-        font-size: 14px;
-        padding: 10px;
-        max-width: 300px;
-    }
+            .subscription-form button {
+                width: 100%;
+                max-width: 200px;
+                border-radius: 5px;
+            }
+        }
 
-    .subscription-form button {
-        font-size: 14px;
-        padding: 10px 20px;
-        max-width: 150px;
-    }
-}
 
-@media (max-width: 320px) {
-    .newsletter-heading {
-        font-size: 18px;
-    }
+        @media (max-width: 480px) {
+            .newsletter-section {
+                padding: 15px;
+            }
 
-    .subscription-form input {
-        font-size: 12px;
-        padding: 8px;
-        max-width: 260px;
-    }
+            .newsletter-heading {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
 
-    .subscription-form button {
-        font-size: 12px;
-        padding: 8px 12px;
-        max-width: 120px;
-    }
-}
-     
-  </style>
-  </head>
-  
+            .newsletter-title {
+                font-size: 16px;
+            }
+
+            .subscription-form input {
+                font-size: 14px;
+                padding: 10px;
+                max-width: 300px;
+            }
+
+            .subscription-form button {
+                font-size: 14px;
+                padding: 10px 20px;
+                max-width: 150px;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .newsletter-heading {
+                font-size: 18px;
+            }
+
+            .subscription-form input {
+                font-size: 12px;
+                padding: 8px;
+                max-width: 260px;
+            }
+
+            .subscription-form button {
+                font-size: 12px;
+                padding: 8px 12px;
+                max-width: 120px;
+            }
+        }
+    </style>
+</head>
+
 <body>
-  <header>
+    <header>
 
-    <div class="top-bar">
-        <div class="contact-info">
-            <span><img src="./image/cll.png" alt="Phone">+919988776655</span>
-            <span><img src="./image/mes.png" alt="Email">@abc.com</span>
-            <span><img src="./image/loc.png" alt="Location">Lorem Ipsum, 223344</span>
+        <div class="top-bar">
+            <div class="contact-info">
+                <span><img src="./image/cll.png" alt="Phone">+919988776655</span>
+                <span><img src="./image/mes.png" alt="Email">@abc.com</span>
+                <span><img src="./image/loc.png" alt="Location">Lorem Ipsum, 223344</span>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
         </div>
-        <div class="social-media">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-        </div>
-    </div>
 
-  
-    <nav class="navbar">
-        <div class="logo">
-            <a href="./Home.html"><img src="./image/logo.png" alt="Logo"></a> 
-         </div>
-        <div class="nav-links">
-            <!-- <a href="./Home.html">Home</a> -->
 
-            <!-- <a href="./About.html">About</a>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="./Home.html"><img src="./image/logo.png" alt="Logo"></a>
+            </div>
+            <div class="nav-links">
+                <!-- <a href="./Home.html">Home</a> -->
+
+                <!-- <a href="./About.html">About</a>
             <a href="./Gallery.html">Gallery</a>
             <a href="./OurSolution.html">Our Solutions</a>
             <a href="./Projects.html">Project</a>
             <a href="./Press.html">Press</a>
             <a href="./Contact.html">Contact</a> -->
 
-            <a href="./Home.html">HOME</a>
-            <a href="./About.html">COMPANY</a>
-            <a href="./OurSolution.html">OUR SOLUTIONS</a>
-            <a href="./Projects.html">PROJECT</a>
-            <a href="./Press.html">PRESS</a>
-            <a href="./Contact.html">CONTACT</a>
+                <a href="./Home.html">HOME</a>
+                <a href="./About.html">COMPANY</a>
+                <a href="./OurSolution.html">OUR SOLUTIONS</a>
+                <a href="./Projects.html">PROJECT</a>
+                <a href="./Press.html">PRESS</a>
+                <a href="./Contact.html">CONTACT</a>
 
+            </div>
+            <div class="mobile-menu-icon">
+                <span class="menu-icon">&#9776;</span>
+            </div>
+        </nav>
+    </header>
+    <section class="banner">
+        <div class="banner-content">
+            <h2>OUR PROJECTS</h2>
+            <h1>Building a Legacy of Excellence</h1>
+            <p>At Eiffel Industries, LLC, we have a diverse portfolio of completed projects that showcase our commitment
+                to quality, innovation, and client satisfaction. Here are a few of the notable projects we have
+                successfully delivered:</p>
         </div>
-        <div class="mobile-menu-icon">
-            <span class="menu-icon">&#9776;</span>
-        </div>
-    </nav>
-</header>
-  <section class="banner">
-    <div class="banner-content">
-        <h2>OUR PROJECTS</h2>
-        <h1>Building a Legacy of Excellence</h1>
-        <p>At Eiffel Industries, LLC, we have a diverse portfolio of completed projects that showcase our commitment to quality, innovation, and client satisfaction. Here are a few of the notable projects we have successfully delivered:</p>
-    </div>
-</section>
-    <!-- Slider Section -->
-     <div class="slide-sec">
-    <section class="project-slider">
-      <div class="slider">
-        <!-- Card 1 -->
-        <div class="project-card">
-          <img src="./image/s1.png" alt="Grandview Apartments" class="project-image">
-          <div class="project-info">
-            <h2>Grandview Apartments</h2>
-            <ul>
-              <li class="scrope"><strong>Type:</strong> Multifamily Residential</li>
-              <li class="scrope"><strong>Location:</strong> Phoenix, AZ</li>
-              <li class="scope"><strong>Scope:</strong> Structural design and engineering for a 12-story apartment complex with over 150 units.</li>
-              <li class="details"><strong>Details:</strong> We provided comprehensive structural solutions for the high-rise, focusing on durability and cost efficiency while ensuring compliance with local building codes. The project also integrated sustainable design practices to maximize energy efficiency and minimize environmental impact.</li>
-            </ul>
-            <a href="./Gallery.html" class="view-gallery-btn">View Gallery</a>
-          </div>
-        </div>
-  
-        <!-- Card 2 -->
-        <div class="project-card">
-          <img src="./image/s2.png" alt="Sunset Towers" class="project-image">
-          <div class="project-info">
-            <h2>Valley Heights Corporate Offices  </h2>
-            <ul>
-              <li class="scrope"><strong>Type:</strong>Commercial Office Building</li>
-              <li class="scrope"><strong>Location:</strong> Scottsdale, AZ</li>
-              <li class="scope"><strong>Scope:</strong> Full structural design and engineering for a 5-story corporate office space.</li>
-              <li class="details"><strong>Details:</strong> This project involved collaboration with architects and contractors to create an innovative, flexible office layout. The structure was engineered for future expansions, and we utilized advanced materials to ensure both strength and modern aesthetic appeal.</li>
-            </ul>
-            <a href="./Gallery.html" class="view-gallery-btn">View Gallery</a>
-          </div>
-        </div>
-  
-        <!-- Card 3 -->
-        <div class="project-card">
-          <img src="./image/s3.png" alt="Greenview Villas" class="project-image">
-          <div class="project-info">
-            <h2>Scottsdale General Hospital</h2>
-            <ul>
-              <li class="scrope"><strong>Type:</strong> Healthcare Facility</li>
-              <li class="scrope"><strong>Location:</strong>Scottsdale, AZ</li>
-              <li class="scope"><strong>Scope:</strong> Structural design and engineering for a new 7-story hospital with specialized healthcare facilities.</li>
-              <li class="details"><strong>Details:</strong>We focused on designing a robust, safe, and accessible healthcare environment. Our team ensured that all medical facilities met rigorous industry standards and integrated efficient, patient-friendly layouts.</li>
-            </ul>
-            <a href="./Gallery.html" class="view-gallery-btn">View Gallery</a>
-          </div>
-        </div>
-  
-        <!-- Card 4 -->
-        <div class="project-card">
-          <img src="./image/s4.png" alt="Oceanfront Residences" class="project-image">
-          <div class="project-info">
-              <h2>Riverbend Elementary School</h2>
-              <ul>
-                  <li class="scrope"><strong>Type:</strong> Educational Facility</li>
-                  <li class="scrope"><strong>Location:</strong>Phoenix, AZ</li>
-                  <li class="scope"><strong>Scope:</strong> Structural engineering for a new elementary school campus, including classrooms, gymnasium, and administrative buildings.</li>
-                  <li class="details"><strong>Details:</strong> We worked closely with educational authorities to design a safe, energy-efficient learning environment. The project incorporated adaptive design elements, allowing the school to grow and adjust to future educational needs.</li>
-              </ul>
-              <a href="./Gallery.html" class="view-gallery-btn">View Gallery</a>
-          </div>
-      </div>
-      
-  
-        <!-- Card 5 -->
-        <div class="project-card">
-          <img src="./image/s5.png" alt="City Heights" class="project-image">
-          <div class="project-info">
-            <h2>Phoenix 
-              Industrial Park </h2>
-            <ul>
-              <li class="scrope"><strong>Type:</strong>Industrial Complex</li>
-              <li class="scrope"><strong>Location:</strong> Phoenix, AZ</li>
-              <li class="scope"><strong>Scope:</strong>Structural engineering for a large-scale industrial facility, including warehouses and manufacturing units.</li>
-              <li class="details"><strong>Details:</strong> We provided innovative structural solutions to accommodate heavy equipment, large machinery, and high-traffic areas. Our design focused on maximizing operational efficiency while maintaining cost-effectiveness.</li>
-            </ul>
-            <a href="./Gallery.html" class="view-gallery-btn">View Gallery</a>
-          </div>
-        </div>
-      </div>
     </section>
-  </div>
-  <section>
-    <div class="newsletter-section">
-      <div class="newsletter-title">Newsletter</div>
-      <div class="newsletter-heading">Subscribe To Our Newsletter To Stay Updated With <br/> Our Latest Construction News and Trends</div>
-      <div class="subscription-form">
-          <input type="email" placeholder="Enter your email" required>
-          <button type="submit">Subscribe</button>
-      </div>
-  </div>
-  </section>
-  <section>
-    <div class="container-footer">
-      <!-- Left Section -->
-      <div class="left-section">
-          <a href="./Home.html"><img src="./image//logo.png" alt="Eiffel Logo" class="logo"></a> 
-          <p>Lorem ipsuLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis telluLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.</p>
-          <div class="social-icons">
-              <a href="#"><img src="./image/fb.png" alt="Facebook"></a>
-              <a href="#"><img src="./image/ins.png" alt="Instagram"></a>
-              <a href="#"><img src="./image/lnk.png" alt="LinkedIn"></a>
-              <a href="#"><img src="./image/x.png" alt="X"></a>
-              <a href="#"><img src="./image/yt.png" alt="YouTube"></a>
-          </div>
-      </div>
+    <!-- Slider Section -->
+    <div class="slide-sec">
+        <section class="project-slider">
+            <div class="slider">
+                <!-- Card 1 -->
+                <div class="project-card">
+                    <img src="./image/s1.png" alt="Grandview Apartments" class="project-image">
+                    <div class="project-info">
+                        <h2>Grandview Apartments</h2>
+                        <ul>
+                            <li class="scrope"><strong>Type:</strong> Multifamily Residential</li>
+                            <li class="scrope"><strong>Location:</strong> Phoenix, AZ</li>
+                            <li class="scope"><strong>Scope:</strong> Structural design and engineering for a 12-story
+                                apartment complex with over 150 units.</li>
+                            <li class="details"><strong>Details:</strong> We provided comprehensive structural solutions
+                                for the high-rise, focusing on durability and cost efficiency while ensuring compliance
+                                with local building codes. The project also integrated sustainable design practices to
+                                maximize energy efficiency and minimize environmental impact.</li>
+                        </ul>
+                        <a href="./Gallery.html" class="view-gallery-btn">View Gallery</a>
+                    </div>
+                </div>
 
-      <!-- Right Section -->
-      <div class="right-section">
-          <div class="links">
-              <ul>
-                  <li><strong>Explore</strong></li>
-                  <li><a href="./Home.html">Home</a></li>
-                  <li><a href="./About.html">About</a></li>
-                  <li><a href="./Gallery.html">Company</a></li>
-                  <li><a href="./OurSolution.html">Our Solutions</a></li>
-                  <li><a href="./Projects.html">Projects</a></li>
-                  <li><a href="./pressNews.html">Press</a></li>
-                  <li><a href="./Contact.html">Contact</a></li>
-              </ul>
-              <ul>
-                  <li><strong>Projects</strong></li>
-                  <li><a href="#">New Constructions</a></li>
-                  <li><a href="#">Reconstructions</a></li>
-                  <li><a href="#">Restorations</a></li>
-                  <li><a href="#">Capital Repair</a></li>
-                  <li><a href="#">Re-equipment</a></li>
-                  <li><a href="#">Individual Planning</a></li>
-              </ul>
-              <ul>
-                  <li><strong>Policy</strong></li>
-                  <li><a href="#">Privacy</a></li>
-                  <li><a href="#">Security</a></li>
-                  <li><a href="#">Terms & Conditions</a></li>
-              </ul>
-          </div>
-      </div>
-  </div>
-  </section>
-  
+                <!-- Card 2 -->
+                <div class="project-card">
+                    <img src="./image/s2.png" alt="Sunset Towers" class="project-image">
+                    <div class="project-info">
+                        <h2>Valley Heights Corporate Offices </h2>
+                        <ul>
+                            <li class="scrope"><strong>Type:</strong>Commercial Office Building</li>
+                            <li class="scrope"><strong>Location:</strong> Scottsdale, AZ</li>
+                            <li class="scope"><strong>Scope:</strong> Full structural design and engineering for a
+                                5-story corporate office space.</li>
+                            <li class="details"><strong>Details:</strong> This project involved collaboration with
+                                architects and contractors to create an innovative, flexible office layout. The
+                                structure was engineered for future expansions, and we utilized advanced materials to
+                                ensure both strength and modern aesthetic appeal.</li>
+                        </ul>
+                        <a href="./Gallery.html" class="view-gallery-btn">View Gallery</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="project-card">
+                    <img src="./image/s3.png" alt="Greenview Villas" class="project-image">
+                    <div class="project-info">
+                        <h2>Scottsdale General Hospital</h2>
+                        <ul>
+                            <li class="scrope"><strong>Type:</strong> Healthcare Facility</li>
+                            <li class="scrope"><strong>Location:</strong>Scottsdale, AZ</li>
+                            <li class="scope"><strong>Scope:</strong> Structural design and engineering for a new
+                                7-story hospital with specialized healthcare facilities.</li>
+                            <li class="details"><strong>Details:</strong>We focused on designing a robust, safe, and
+                                accessible healthcare environment. Our team ensured that all medical facilities met
+                                rigorous industry standards and integrated efficient, patient-friendly layouts.</li>
+                        </ul>
+                        <a href="./Gallery.html" class="view-gallery-btn">View Gallery</a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="project-card">
+                    <img src="./image/s4.png" alt="Oceanfront Residences" class="project-image">
+                    <div class="project-info">
+                        <h2>Riverbend Elementary School</h2>
+                        <ul>
+                            <li class="scrope"><strong>Type:</strong> Educational Facility</li>
+                            <li class="scrope"><strong>Location:</strong>Phoenix, AZ</li>
+                            <li class="scope"><strong>Scope:</strong> Structural engineering for a new elementary school
+                                campus, including classrooms, gymnasium, and administrative buildings.</li>
+                            <li class="details"><strong>Details:</strong> We worked closely with educational authorities
+                                to design a safe, energy-efficient learning environment. The project incorporated
+                                adaptive design elements, allowing the school to grow and adjust to future educational
+                                needs.</li>
+                        </ul>
+                        <a href="./Gallery.html" class="view-gallery-btn">View Gallery</a>
+                    </div>
+                </div>
+
+
+                <!-- Card 5 -->
+                <div class="project-card">
+                    <img src="./image/s5.png" alt="City Heights" class="project-image">
+                    <div class="project-info">
+                        <h2>Phoenix
+                            Industrial Park </h2>
+                        <ul>
+                            <li class="scrope"><strong>Type:</strong>Industrial Complex</li>
+                            <li class="scrope"><strong>Location:</strong> Phoenix, AZ</li>
+                            <li class="scope"><strong>Scope:</strong>Structural engineering for a large-scale industrial
+                                facility, including warehouses and manufacturing units.</li>
+                            <li class="details"><strong>Details:</strong> We provided innovative structural solutions to
+                                accommodate heavy equipment, large machinery, and high-traffic areas. Our design focused
+                                on maximizing operational efficiency while maintaining cost-effectiveness.</li>
+                        </ul>
+                        <a href="./Gallery.html" class="view-gallery-btn">View Gallery</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <section>
+        <div class="newsletter-section">
+            <div class="newsletter-title">Newsletter</div>
+            <div class="newsletter-heading">Subscribe To Our Newsletter To Stay Updated With <br /> Our Latest
+                Construction News and Trends</div>
+            <div class="subscription-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">
+                    SUBSCRIBE
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container-footer">
+            <!-- Left Section -->
+            <div class="left-section">
+                <a href="./Home.html"><img src="./image//logo.png" alt="Eiffel Logo" class="logo"></a>
+                <p>Lorem ipsuLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum
+                    est a, mattis telluLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                    molestie, dictum est a, mattis tellum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                    molestie, dictum est a, mattis tellus.</p>
+                <div class="social-icons">
+                    <a href="#"><img src="./image/fbanC.png" alt="Facebook"></a>
+                    <a href="#"><img src="./image/inana.png" alt="Instagram"></a>
+                    <a href="#"><img src="./image/indana.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="./image/tana.png" alt="X"></a>
+                    <a href="#"><img src="./image/ytana.png" alt="YouTube"></a>
+                </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="right-section">
+                <div class="links">
+                    <ul>
+                        <li><strong>Explore</strong></li>
+                        <li><a href="./Home.html">Home</a></li>
+                        <li><a href="./About.html">About</a></li>
+                        <li><a href="./Gallery.html">Company</a></li>
+                        <li><a href="./OurSolution.html">Our Solutions</a></li>
+                        <li><a href="./Projects.html">Projects</a></li>
+                        <li><a href="./pressNews.html">Press</a></li>
+                        <li><a href="./Contact.html">Contact</a></li>
+                    </ul>
+                    <ul>
+                        <li><strong>Projects</strong></li>
+                        <li><a href="#">New Constructions</a></li>
+                        <li><a href="#">Reconstructions</a></li>
+                        <li><a href="#">Restorations</a></li>
+                        <li><a href="#">Capital Repair</a></li>
+                        <li><a href="#">Re-equipment</a></li>
+                        <li><a href="#">Individual Planning</a></li>
+                    </ul>
+                    <ul>
+                        <li><strong>Policy</strong></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="copy_right">
+
+            <h6 class="copy_right_text">© Eiffel Industries 2024. All Rights Reserved</h6>
+        </div>
+    </section>
+
+
+
+
     <!-- Slick Carousel JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-  
+
     <!-- Initialize Slick Carousel -->
     <script>
-      $(document).ready(function(){
-        $('.slider').slick({
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          dots: true,
-          arrows: true,
-          infinite: true,
-          responsive: [
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 1,
-              }
-            },
-            {
-              breakpoint: 1024,
-              settings: {
+        $(document).ready(function () {
+            $('.slider').slick({
                 slidesToShow: 2,
-              }
-            }
-          ]
+                slidesToScroll: 1,
+                dots: true,
+                arrows: true,
+                infinite: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                    }
+                ]
+            });
         });
-      });
 
 
-      const mobileMenuIcon = document.querySelector('.menu-icon');
-    const navLinks = document.querySelector('.nav-links');
-    
-    mobileMenuIcon.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
+        const mobileMenuIcon = document.querySelector('.menu-icon');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
     </script>
-  </body>
-  </html>
-  
+</body>
+
+</html>
